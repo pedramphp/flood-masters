@@ -1,0 +1,242 @@
+/* 
+  :: Css3designer.com Reset Stylesheet
+  :: Author:  Mahdi Pedram ( Osiris ) - http://www.mahdipedram.com
+  :: Twitter: @pedramphp
+  :: Version: 1.0 - May 2011
+	
+  :: Inspired by html5doctor.com Reset Stylesheet And http://html5boilerplate.com/
+  :: Authors: Eric Meyer & Richard Clark & Paul Irish
+
+
+  DIRECTORY
+  ==============  
+  - Group Selector
+  - Single Selector
+  - Media
+	
+*/
+
+
+/*		Group Selector
+ ========================*/
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+  /* Box Model */
+  margin: 0; padding: 0; 
+  border: 0; outline: 0;
+    
+  /* Text */
+  background: transparent;
+  -webkit-background-clip: padding-box;
+  vertical-align: baseline;
+  font-size: 100%; font: inherit; /* Eric Meyer 2011/01/10 release */ }
+
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { display: block; }
+
+address, caption, cite, code, dfn, em, 
+h1, h2, h3, h4, h5, h6, strong, th, var { font-weight: normal; font-style: normal;}
+
+
+
+a, ins { text-decoration: none; }
+
+input, select { vertical-align: middle; }
+
+td, td img { vertical-align:top; }
+
+caption, th { text-align: left; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+
+abbr[title], dfn[title], acronym[title] { border-bottom: 1px dotted; cursor: help; }
+
+/**
+ * Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+ */
+ 
+body { font:13px/1.231 sans-serif; *font-size:small; } /* Hack retained to preserve specificity */
+
+select, input, textarea { font:99% sans-serif; }
+
+pre, code, kbd, samp { 
+  font-family: monospace, sans-serif; }
+
+/* Normalize monospace sizing:
+   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+h1, h2, h3, h4, h5, h6 { font-size: 1.0em; font-weight: bold; text-rendering: optimizeLegibility; }
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active, :focus { outline: none; }
+
+/* Remove margins for navigation lists */
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+
+ol,ul { list-style: none; }
+
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+
+
+/* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
+input[type="radio"] { vertical-align: text-bottom; }
+
+input[type="checkbox"] { vertical-align: bottom; }
+
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+
+.ie6 input { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea { margin: 0; }
+
+/*		Single Selector
+ ========================*/
+ 
+html { 
+	
+  /* always force a scrollbar in non-IE */ 
+  overflow-y: scroll; 
+	
+  /* maxvoltar.com/archive/-webkit-font-smoothing */
+  -webkit-font-smoothing: antialiased;  }
+
+
+/*
+  fonts.css from the YUI Library: developer.yahoo.com/yui/
+  Please refer to developer.yahoo.com/yui/fonts/ for font sizing percentages
+	
+  There are three custom edits:
+  - remove arial, helvetica from explicit font stack
+  - make the line-height relative and unit-less
+  - remove the pre, code styles
+*/
+body { 
+  line-height: 1;
+  font: 13px sans-serif; *font-size: small; *font: x-small; }
+
+table { 
+  border-collapse: collapse; border-spacing: 0; 
+  font-size: inherit; font: 100%; }
+
+del { text-decoration: line-through; }
+
+hr { 
+  /* Layout */
+  display:block; 
+	
+  /* Box Model */
+  margin:1em 0; padding:0;
+  height: 1px; 
+  border: 0; }
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+
+sub { top: -0.5em; vertical-align: sub; }
+
+sup { bottom: -0.25em; vertical-align: super; }
+
+pre { 
+  padding: 15px; 
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */ }
+
+
+/* make buttons play nice in IE:    
+   www.viget.com/inspire/styling-the-button-element-in-internet-explorer/ 
+*/  
+button { width: auto; overflow: visible; }
+
+acronym { text-transform: uppercase; }
+
+label { cursor: pointer; }
+
+small { font-size: 85%; }
+
+ol { list-style-type: decimal; }
+
+td { vertical-align: top; }
+
+/* www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+textarea { overflow: auto; resize: none;} 
+
+
+/*		Media 
+ ========================*/
+
+
+/* 
+  print styles inlined to avoid required HTTP connection 
+  www.phpied.com/delay-loading-your-print-css/ 
+*/
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none; }
+
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+
+  a:after { content: " (" attr(href) ")"; } 
+
+  abbr:after { content: " (" attr(title) ")"; }
+  
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  
+  img { page-break-inside: avoid; }
+
+  @page { margin: 0.5cm; }
+
+  p, h2, h3 { orphans: 3; widows: 3; }
+
+  h2, h3{ page-break-after: avoid; }
+}
+
+
+/* Media queries for responsive design */
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+}
+
+@media all and (orientation:landscape) { 
+  /* Style adjustments for landscape mode goes here */ 
+}
+
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+	
+  /* Prevent iOS, WinMobile from adjusting font size */
+ html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
+ 
+}
+
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }

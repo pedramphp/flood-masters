@@ -1,0 +1,1263 @@
+/* 
+  :: TheFloodMasters Cascading Stylesheet
+  :: Author:  Farzin Fadamin ( Horus )
+  :: Twitter: @farzinfadamin
+  :: Version: 1.0 - FEB 2012
+
+
+  DIRECTORY
+  ==============  
+  - GENERAL ADJUSTMENTS ( coloring, @font-face )
+  - HEADER
+  - MAIN MENU
+  - SLIDE SHOW
+  - CONTENT
+  - FOOTER
+*/
+
+
+
+/*   GENERAL ADJUSTMENTS
+=================*/
+
+body {
+	font-family: "Lucida Grande", arial, verdana, sans-serif;
+	background: transparent url("images/bg.png") repeat;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1.8em;
+	color: #333;
+	overflow-x: hidden;
+	overflow-y: hidden
+}
+
+a, a:link { color: #0088cc; }
+a:hover { text-decoration: underline; }
+
+h1 { font-size: 35px}
+h2 { font-size: 25px}
+h3 { font-size: 22px}
+h4 { font-size: 18px}
+h5 { font-size: 14px}
+h6 { font-size: 13px}
+
+b { font-weight: bold}
+strong { color: #0088cc; font-weight: inherit}
+.red { color: #ff2200 !important;}
+
+.floatLeft { float: left}
+.floatRight { float: right}
+
+.clr { clear: both; }
+
+.wp {
+	padding: 0 20px;
+}
+
+#wrapper {
+	width: 990px;
+	margin: 0 auto;
+}
+
+.button {
+	text-align: center;
+}
+
+.button a{
+	background-image: -ms-linear-gradient(top, #2CA7D7 0%, #3C93B5 100%);
+	background-image: -moz-linear-gradient(top, #2CA7D7 0%, #3C93B5 100%);
+	background-image: -o-linear-gradient(top, #2CA7D7 0%, #3C93B5 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2CA7D7), color-stop(1, #3C93B5));
+	background-image: -webkit-linear-gradient(top, #2CA7D7 0%, #3C93B5 100%);
+	background-image: linear-gradient(top, #2CA7D7 0%, #3C93B5 100%);
+	background-color: #3c93b5;
+	border: 1px solid #1d8bb6;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	color: #fff;
+	padding: 8px 20px;
+	position: relative;
+}
+
+.button a:hover {
+	background-image: -ms-linear-gradient(bottom, #2CA7D7 0%, #3C93B5 100%);
+	background-image: -moz-linear-gradient(bottom, #2CA7D7 0%, #3C93B5 100%);
+	background-image: -o-linear-gradient(bottom, #2CA7D7 0%, #3C93B5 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #2CA7D7), color-stop(1, #3C93B5));
+	background-image: -webkit-linear-gradient(bottom, #2CA7D7 0%, #3C93B5 100%);
+	background-image: linear-gradient(bottom, #2CA7D7 0%, #3C93B5 100%);
+	text-decoration: none;
+	background-color: #2ca7d7;
+}
+
+.button.white a {
+	background-image: -ms-linear-gradient(bottom, #EDEDED 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(bottom, #EDEDED 0%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(bottom, #EDEDED 0%, #FFFFFF 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EDEDED), color-stop(1, #FFFFFF));
+	background-image: -webkit-linear-gradient(bottom, #EDEDED 0%, #FFFFFF 100%);
+	background-image: linear-gradient(bottom, #EDEDED 0%, #FFFFFF 100%);
+	border: 1px solid #c1c1c1;
+	color: #333;
+}
+
+.button.white a:hover {
+	background-image: -ms-linear-gradient(top, #EDEDED 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(top, #EDEDED 0%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(top, #EDEDED 0%, #FFFFFF 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #EDEDED), color-stop(1, #FFFFFF));
+	background-image: -webkit-linear-gradient(top, #EDEDED 0%, #FFFFFF 100%);
+	background-image: linear-gradient(top, #EDEDED 0%, #FFFFFF 100%);
+}
+
+.button.more a{
+	padding: 8px 35px 8px 20px;
+}
+
+.button.more figure{
+	background: transparent url("images/arrow-right.png") no-repeat 0 -2px;
+	width: 16px;
+	height: 38px;
+	top: 0;
+	right: 10px;
+	position: absolute;
+}
+
+.button.more span {
+	padding-right: 30px;
+}
+
+
+/*   HEADER
+=================*/
+
+#header {
+	margin: 30px 0;
+	display: inline-block;
+	width: 100%;
+	font-family: Helvetica;
+}
+
+#header h1{
+	float: left;
+	width: 295px;
+	height: 65px;
+	margin-top: 10px;
+}
+#header h1 a {
+	float: left;
+	background: transparent url("images/logo-floodmasters.png") no-repeat;
+	width: 295px;
+	height: 65px;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+#callSection {
+	padding-top: 15px;
+	float: right;
+	background: transparent url("images/fig-truck.png") no-repeat right 0;
+}
+
+#callSection span {
+	float: right;
+	clear: both;
+	color: #006699;
+	padding-right: 130px;
+	font-size: 15px;
+}
+
+#callSection span.phoneNo {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+#callSection span.timer {
+	font-size: 17px;
+	padding-right: 0;
+	padding-left: 30px;
+	background: transparent url("images/icon-clock.png") no-repeat left center;
+}
+
+/*   MAIN MENU
+=================*/
+
+#navMenu {
+	clear: both;
+	background: transparent url("images/bg-menu.png") no-repeat;
+	width: 990px;
+	height: 52px;
+	padding: 0 4px 0 1px;
+	margin-bottom: 10px;
+}
+
+#navMenu ul {
+	padding: 8px 0 0 30px; 
+}
+
+#navMenu li {
+	float: left;
+	font-size: 15px;
+}
+
+#navMenu li.last {
+	margin-right: 0;
+}
+
+#navMenu li.firstLevel {
+	position: relative;
+}
+
+li.firstLevel a {
+	color: #fff;
+	float: left;
+	margin: 0 18px;
+	text-shadow: 1px 1px 0 #105975;
+	border-radius: 5px;
+	-moz-border-radius: 5px;	
+	height: 34px;
+	line-height: 34px;
+	padding-left: 5px;
+	-webkit-transition: all 0.1s linear 0s;
+	-moz-transition: all 0.1s linear 0s;
+	-o-transition: all 0.1s linear 0s;
+	transition: all 0.1s linear 0s;
+}
+
+li.firstLevel a:hover {
+	color: #358aa1;
+	text-shadow: none;
+	text-decoration: none;
+	background-color: #e4f3f9;
+	background: transparent url("images/bg-menu-hover.png") left top;
+	text-shadow: 1px 1px 0 #fff;
+}
+
+li.firstLevel a span {
+	padding: 0 20px 0 15px;
+	float: left;
+	cursor: pointer;
+}
+li.firstLevel a:hover span {
+	background: transparent url("images/bg-menu-hover.png") right top;
+	height: 34px;
+	display: block;
+}
+
+
+li.firstLevel.hovered ul{display: block;}
+
+li.firstLevel ul {
+	position: absolute;
+	top: 34px;
+	left: 0px;
+	padding: 7px;
+    width: 250px;
+	display: none;
+	border-radius: 0px 5px 5px;
+	-moz-border-radius: 0px 5px 5px;
+	box-shadow: rgba(0,0,0,0.4) 1px 2px 3px 0px;
+	background-color: #e4f3f9;
+	line-height: 26px;
+}
+
+#navMenu li.secondLevel{
+	padding: 0 8px;
+	border-radius: 2px;
+	-moz-border-radius:2px;	
+}
+
+li.secondLevel a {
+	color: #358aa1;
+	display: block;
+
+}
+
+li.secondLevel a:hover {
+	background: transparent url("images/bg-menu-items.png") repeat-x;
+	color: #fff;
+}
+
+/*   SLIDE SHOW
+=================*/
+
+#slideShow {
+	width: 985px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	border: 1px solid #d8d8d8;
+	display: inline-block;
+	position: relative;
+}
+
+#slideShow nav {
+	float: left;
+	width: 290px;
+	position: absolute;
+	left: 0;
+	height: 324px;
+}
+
+#slideShow nav a {
+	width: 290px;
+	height: 108px;
+	position: relative;
+	background: transparent url("images/slide-navs.jpg") no-repeat 0 0;
+	display: block;
+	cursor: pointer;
+}
+
+#slideShow nav a:hover {
+	text-decoration: none;
+}
+
+#slideShow nav a div{ 
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 300px;
+	height: 83px;
+	background: transparent url("images/slide-nav-hover.png") no-repeat 0 0;
+	z-index: 10;
+	color: #fff;
+	display: none;
+	padding: 25px 0 0 20px;
+}
+
+#slideShow nav a:hover div{
+	display: block;
+}
+
+#slideShow nav b {
+	font-size: 22px;
+	margin-bottom: 10px;
+	display: block;
+	font-weight: normal
+}
+#slideShow nav sub {
+	vertical-align: baseline;
+	font-size: 12px;
+	line-height: 18px;
+	width: 250px;
+	float: left;
+}
+
+#slideShow nav a.navWater, #slideShow nav a.navWater div{
+	border-radius: 5px 0 0 0;
+	-moz-border-radius: 5px 0 0 0;
+}
+
+#slideShow nav a.navMold, #slideShow nav a.navMold div{
+	border-radius: 0 0 0 5px;
+	-moz-border-radius: 0 0 0 5px;
+}
+
+#slideShow nav a.navWater {
+	background-position: 0 0;
+}
+
+#slideShow nav a.navFire {
+	background-position: 0 -108px
+}
+
+#slideShow nav a.navMold {
+	background-position: 0 -216px;
+	border-radius: 0 0 0 5px;
+	-moz-border-radius: 0 0 0 5px;
+}
+
+#slideShow nav span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 280px;
+	background: transparent url("images/bg-black-transparent.png") ;
+	color: #fff;
+	height: 35px;
+	line-height: 35px;
+	padding-left: 10px;
+}
+
+
+#slidePicture {
+	width: 695px;
+	height: 324px;
+	float: right;
+	position: relative;
+}
+
+#slidePicture li{
+	position: absolute;
+	z-index: -1;
+	right: 0;
+	top:0;
+	opacity: 0
+}
+
+#slidePicture li.active {
+	z-index: 1;
+	opacity: 1;
+}
+
+#slidePicture section {
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+}
+
+
+/*   CONTENT
+=================*/
+
+.contentBox, .contentBoxMedium {
+	background-color: #fff;
+	width: 990px;
+	margin: 10px auto 0;
+}
+
+.contentBox .topContent, .contentBoxMedium .topContent {
+	width: 990px;
+	height: 10px;
+	float: left;
+	background: transparent url("images/bg-content-top.png") no-repeat;
+}
+
+.contentBox .middleContent, .contentBoxMedium .middleContent{
+	width: 985px;
+	padding: 10px 3px 10px 2px;
+	background: transparent url("images/bg-content-mid.png") repeat-y;
+	display: block
+}
+
+.contentBox .bottomContent, .contentBoxMedium .bottomContent {
+	width: 990px;
+	height: 10px;
+	background: transparent url("images/bg-content-btm.png") no-repeat;
+}
+
+.contentBoxMedium {
+	width: 760px;
+	float: right;
+}
+.contentBoxMedium .topContent {
+	background: transparent url("images/bg-content-med-top.png") no-repeat;
+}
+.contentBoxMedium .middleContent {
+	background: transparent url("images/bg-content-med-mid.png") repeat-y;
+}
+.contentBoxMedium .bottomContent {
+	background: transparent url("images/bg-content-med-btm.png") no-repeat;
+}
+
+#whatSection {
+	background: transparent url("images/bg-gradient-bottomtop.png") repeat-x left bottom;
+	padding: 30px 30px 50px;
+}
+
+#whatSection h2 {
+	margin-bottom: 20px;
+	font-weight: normal;
+}
+
+#whatSection .rightDiv {
+	float: left;
+	width: 420px;
+	padding-left: 40px;
+}
+
+#whatSection .leftDiv {
+	float: left;
+	padding-right: 30px;
+	width: 430px;
+	background: transparent url("images/v-splitter.png") no-repeat right center;
+}
+
+#whatSection ul {
+	margin-top: 20px;
+}
+
+ul.starList li{
+	background: transparent url("images/icon-star.png") no-repeat left 5px;
+	padding-left: 20px;
+}
+
+ul.starBold li{
+	background: transparent url("images/icon-star-blue.png") no-repeat left 5px;
+	padding-left: 20px;
+	margin-bottom: 10px;
+}
+
+ul.bullet li{
+	background: transparent url("images/icon-bullet.png") no-repeat left 7px;
+	padding-left: 20px;
+	margin-bottom: 5px;
+}
+
+ul.tickList li{
+	background: transparent url("images/icon-mark-blue.png") no-repeat left 2px;
+	padding-left: 20px;
+}
+
+ul.col-2 li{
+	float: left !important;
+	width: 45% !important;
+	clear: none !important;
+}
+
+#serviceColumns section{
+	width: 327px;
+	float: left;
+	padding-right: 2px;
+	background: transparent url("images/v-splitter2.png") no-repeat right top;
+	padding-bottom: 20px;
+}
+
+#serviceColumns section.last {
+	background: none;
+	padding-right: 0;
+}
+
+#serviceColumns figure {
+	position: relative;
+	width: 100%;
+	height: 218px;
+	overflow: hidden;
+}
+
+#serviceColumns figure img {
+	width: 328px;
+	height: 218px;
+	border: none;
+}
+
+#serviceColumns figcaption {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background: transparent url("images/bg-white-transparent.png") ;
+	height: 50px;
+	line-height: 50px;
+	font-size: 17px;
+	color: #333;
+	text-align: center;
+	z-index: 0;
+}
+
+#serviceColumns aside {
+	padding: 20px 20px 10px;
+	line-height: 18px;
+	background: transparent url("images/bg-gradient-topbottom.png") repeat-x left top;
+}
+
+#serviceColumns ul {
+	margin: 20px 0;
+	float: left;
+}
+
+#serviceColumns ul li {
+	float: none;
+	margin-bottom: 10px;
+}
+
+#serviceColumns h5 {
+	color: #0088cc;
+	margin-bottom: 10px;
+	font-weight: normal;
+}
+
+footer.partners {
+	background: transparent url("images/bg-bottom-partners.jpg") no-repeat !important;
+	width: 990px;
+	height: 35px !important;
+	line-height: 35px;
+	text-align: right;
+}
+
+footer.partners a {
+	margin-right: 20px;
+	background: transparent url("images/arrow-small-blue.png") no-repeat right center;
+	padding-right: 10px;
+	color: #333;
+}
+
+footer.partners a:hover {
+	text-decoration: none;
+}
+
+.innerPage {
+	padding: 20px 0 0;
+	font-size: 14px;
+}
+
+.innerPage p {
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+
+.innerPage h2 {
+	margin-bottom: 20px;
+	clear: both;
+	font-weight: normal
+}
+
+.middleContent hgroup {
+	margin: 20px;
+	display: block;
+}
+
+.middleContent hgroup h1 {
+	margin: 10px 0;
+}
+
+.middleContent hgroup h2 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.middleContent .trustBox {
+	background: transparent url("images/bg-box-trust.png") repeat-x left bottom;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding: 20px;
+	margin: 20px 0 0 70px;
+	float: left;
+	width: 300px;
+	display: inline;
+}
+
+.trustBox h3{
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal
+}
+
+.trustBox ul {
+	margin: 20px 0;
+	display: inline-block;
+}
+
+.trustBox ul li {
+	clear: both;
+	float: none;
+	margin-bottom: 5px;
+}
+
+.callUs {
+	float: right;
+	background: transparent url("images/img-call.jpg") no-repeat;
+	width: 560px;
+	height: 268px;
+	position: relative;
+}
+
+.callUs span {
+	width: 300px;
+	height: 110px;
+	position: absolute;
+	top: 80px;
+	left: 100px;
+}
+
+.callUs h2 {
+	font-size: 30px;
+}
+
+.callUs h6 {
+	font-size: 13px;
+	margin: 5px 0 10px;
+	font-weight: normal
+}
+
+.serviceSection {
+	margin: 20px 0;
+	background: transparent url("images/splitter-gray.png") no-repeat top center;
+	padding: 40px 20px 0;
+	display: inline;
+	float: left;
+	width: 945px;
+	display: inline;
+}
+
+.ie6 .serviceSection, .ie7 .serviceSection {width: 944px;}
+
+.serviceSection section, .serviceSection aside {
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.serviceSection .centerized{
+	text-align: center
+}
+
+.serviceSection section.small, .serviceSection aside.small { width: 35%}
+.serviceSection section.big, .serviceSection aside.big { width: 65%}
+
+.serviceSection figure {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 10px;
+	position: relative;
+}
+.serviceSection figure i {
+	position: absolute;
+	left: 50%;
+	width: 420px;
+	height: 10px;
+	bottom: -11px;
+	margin-left: -210px;
+	background: transparent url("images/pic-shadow.png") no-repeat;
+}
+
+.ie6 .serviceSection figure i {
+	bottom: -16px;
+}
+
+.serviceSection figure.smallestPic i {
+	background-image: url("images/pic-shadow-smallest.png");
+	width: 200px;
+	margin-left: -100px;
+}
+
+.serviceSection figure img {
+	display: block;
+}
+
+.serviceSection figure.smallPic i {
+	background-image: url("images/pic-shadow-small.png");
+	width: 270px;
+	margin-left: -135px;
+}
+
+.serviceSection figure.smallPic img{
+	width: 265px;
+}
+
+.serviceSection figure.mediumPic i { 
+	background-image: url("images/pic-shadow-medium.png");
+}
+
+.serviceSection figure.mediumPic img {
+	width: 385px;
+}
+
+
+.serviceSection ul, .serviceSection ol {
+	margin: 10px 0 10px 30px
+}
+
+.serviceSection ul li, .serviceSection ol li {
+	margin-top: 15px;
+
+}
+
+.serviceSection ol {
+	list-style: none;
+}
+
+#serviceWhyFlood {
+	clear: both;
+	padding: 40px 20px 0;
+	background: transparent url("images/h-splitter-big.png") no-repeat top center;
+}
+
+#serviceWhyFlood section{
+	float: left;
+	width: 60%;
+	line-height: 28px;
+	text-align: justify;
+}
+
+#serviceWhyFlood ul, #serviceWhyFlood ol{
+	margin: 10px 0 10px 30px;
+}
+
+#serviceWhyFlood a {
+	border-bottom: 2px dotted;
+}
+
+#serviceWhyFlood a:hover {
+	border-bottom: none;
+	text-decoration: none;
+}
+
+#serviceWhyFlood figure {
+	background: url("images/bg-pic-multi.png") no-repeat;
+	position: relative;
+	float: right;
+	width: 342px;
+	height: 270px;
+}
+
+#serviceWhyFlood figure img {
+	position: absolute;
+	left: 22px;
+	top: 26px;
+	width: 296px;
+	height: 218px;
+}
+
+#sidebar {
+	float: left;
+	width: 220px;
+	position: absolute;
+	
+}
+
+#sidebar.fixed {
+	position: fixed;
+	top: 0;
+}
+
+.sideBox {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.sideBox header {
+	width: 220px;
+	height: 42px;
+	line-height: 42px;
+	text-align: center;
+}
+
+.sideBox section {
+	width: 180px;
+	padding: 10px 20px;
+	background-position: repeat-y;
+	color: #fff;
+}
+
+.sideBox li {
+	margin-bottom: 10px;
+	line-height: 17px;
+}
+
+.sideBox li a {
+	padding-left: 15px;
+	background: url("images/arrow-right-orange-small.png") no-repeat left 5px;
+	color: #333333;
+	font-weight: bold
+}
+
+.sideBox li ul{
+	display: none;
+}
+
+.sideBox li.opened a{
+	background-image: url("images/arrow-down-orange-small.png");
+}
+
+.sideBox li.opened ul {
+	margin: 15px 0px;
+	display: block;
+}
+
+.sideBox li.opened ul li {
+	padding-left: 10px;
+}
+
+.sideBox li.opened ul li a{
+	background: url("images/arrow-dash.png") no-repeat left center !important;
+	padding-left: 10px;
+}
+
+.sideBox li.opened li a{
+	font-size: 12px;
+	font-weight: normal
+}
+
+.sideBox footer {
+	width: 220px;
+	height: 5px;
+}
+
+.sideBox.orangeColor{
+	background-color: #fff0e3;
+	border: 1px solid #e6a86b;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.sideBox.orangeColor li a{
+	background: url("images/arrow-right-orange-small.png") no-repeat left 5px;
+}
+
+.sideBox.orangeColor li.opened a{
+	background: url("images/arrow-down-orange-small.png") no-repeat left 5px;
+}
+
+.sideBox.orangeColor header {
+	color: #ff840c;
+}
+
+.sideBox.greenColor{
+	background-color: #eafbd7;
+	border: 1px solid #98ca97;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+}
+
+.sideBox.greenColor header {
+	color: #266b32;
+}
+
+.sideBox.greenColor li a{
+	background: url("images/arrow-right-green-small.png") no-repeat left 5px;
+}
+
+.sideBox.greenColor li.opened a{
+	background: url("images/arrow-down-green-small.png") no-repeat left 5px;
+}
+
+
+#aboutUsContent h2{
+	margin: 20px 0;
+	font-weight: normal
+}
+
+#areaMaps li{
+	float: left;
+	width: 297px;
+	margin-right: 27px;
+}
+
+#areaMaps h5 {
+	margin-bottom: 5px;
+	color: #0088cc;
+	font-weight: normal
+}
+
+#areaMaps li.last {
+	margin-right: 0;
+}
+
+#areaMaps figure {
+	border: 1px solid #888;
+}
+
+#areaMaps figure img {
+	display: block;
+}
+
+#areaMaps li div {
+	clear: both;
+	display: block;
+	margin-top: 10px;
+}
+
+/*   WATER PAGE
+=================*/
+
+.waterPage .trustBox {
+	border-color: #b9dcee
+}
+
+.waterPage .serviceSection {
+	background: transparent url("images/splitter-blue.png") no-repeat top center;
+}
+
+.waterPage ul.starBold li {
+	background: transparent url("images/icon-star-blue.png") no-repeat left 5px;
+}
+
+/*   FIRE PAGE
+=================*/
+
+.firePage .button a{
+	background-image: -ms-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -moz-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -o-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FF6701), color-stop(1, #FF9B59));
+	background-image: -webkit-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	border-color: #d45c0c;
+	background-color: #FF6701;
+}
+.firePage .button a:hover {
+	background-image: -ms-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -moz-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -o-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FF6701), color-stop(1, #FF9B59));
+	background-image: -webkit-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-color: #FF9B59;
+}
+
+.firePage .trustBox {
+	border-color: #f8c19f
+}
+
+.firePage .serviceSection {
+	background: transparent url("images/splitter-orange.png") no-repeat top center;
+}
+
+.firePage ul.tickList li{
+	background: transparent url("images/icon-mark-orange.png") no-repeat left 2px;
+	padding-left: 20px;
+}
+
+.firePage ul.starBold li {
+	background: transparent url("images/icon-star-orange.png") no-repeat left 5px;
+}
+
+.firePage strong, .firePage #serviceWhyFlood a {
+	color: #ff6600;
+}
+
+/*   MOLD PAGE
+=================*/
+
+.moldPage .button a {
+	background-image: -ms-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
+	background-image: -moz-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
+	background-image: -o-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #9A6733), color-stop(1, #C88C50));
+	background-image: -webkit-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
+	background-image: linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
+	border-color: #905d2a;
+	background-color: #9A6733;
+}
+
+.moldPage .button a:hover {
+	background-image: -ms-linear-gradient(top, #9A6733 0%, #C88C50 100%);
+	background-image: -moz-linear-gradient(top, #9A6733 0%, #C88C50 100%);
+	background-image: -o-linear-gradient(top, #9A6733 0%, #C88C50 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9A6733), color-stop(1, #C88C50));
+	background-image: -webkit-linear-gradient(top, #9A6733 0%, #C88C50 100%);
+	background-image: linear-gradient(top, #9A6733 0%, #C88C50 100%);
+	background-color: #C88C50
+}
+
+.moldPage .trustBox {
+	border-color: #cdb49b
+}
+
+.moldPage ul.tickList li{
+	background: transparent url("images/icon-mark-brown.png") no-repeat left 2px;
+	padding-left: 20px;
+}
+
+.moldPage ul.starBold li {
+	background: transparent url("images/icon-star-brown.png") no-repeat left 5px;
+}
+
+.moldPage strong, .moldPage #serviceWhyFlood a {
+	color: #996633;
+}
+
+/*   CLEANING PAGE
+=================*/
+
+.cleaningPage .button a{
+	background-image: -ms-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -moz-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -o-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FF6701), color-stop(1, #FF9B59));
+	background-image: -webkit-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	border-color: #d45c0c;
+	background-color: #FF6701;
+}
+.cleaningPage .button a:hover {
+	background-image: -ms-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -moz-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -o-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FF6701), color-stop(1, #FF9B59));
+	background-image: -webkit-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-color: #FF9B59;
+}
+
+.cleaningPage .trustBox {
+	border-color: #f8c19f
+}
+
+#cleaningServiceWrapper {
+	position: relative;
+	width: 990px;
+}
+
+.cleaningPage .serviceSection {
+	background: transparent url("images/splitter-blue.png") no-repeat top center;
+}
+
+.cleaningPage ul.tickList li{
+	background: transparent url("images/icon-mark-orange.png") no-repeat left 2px;
+	padding-left: 20px;
+}
+
+.cleaningPage ul.starBold li {
+	background: transparent url("images/icon-star-orange.png") no-repeat left 5px;
+}
+
+.cleaningPage .innerPage {
+	float: left;
+	width: 715px;
+	padding: 10px 20px 0;
+}
+
+.cleaningPage .serviceSection {
+	background: transparent url("images/splitter-gray-medium.png") no-repeat top center;
+	width: 705px;
+	padding: 40px 0 0;
+}
+
+.cleaningPage .serviceSection h2{
+	color: #000;
+}
+.cleaningPage .serviceSection section{
+	width: 45%;
+}
+
+.cleaningPage .serviceSection aside  {
+	width: 55%;
+}
+
+.cleaningPage ul li {
+	margin-bottom: 10px;
+}
+
+.cleaningPage strong, .cleaningPage #serviceWhyFlood a {
+	color: #ff6600;
+}
+
+.residentalServices h2{
+	color: #ed720e
+}
+
+.residentalServices .serviceSection{
+	background-image: url("images/splitter-orange-medium.png");
+}
+
+.commercialServices h2{
+	color: #0a8a46
+}
+
+.commercialServices strong{
+	color: #0a8a46
+}
+
+.commercialServices ul.tickList li{
+	background: transparent url("images/icon-mark-green.png") no-repeat left 2px;
+}
+
+.commercialServices ul.starBold li {
+	background: transparent url("images/icon-star-green.png") no-repeat left 5px;
+}
+
+.commercialServices .serviceSection{
+	background-image: url("images/splitter-green-medium.png");
+}
+
+
+/*   FLOOR PAGE
+=================*/
+.floorPage .button a{
+	background-image: -ms-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: -moz-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: -o-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #661E04), color-stop(1, #98300B));
+	background-image: -webkit-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	border-color: #461402;
+	background-color: #661E04;
+}
+.floorPage .button a:hover {
+	background-image: -ms-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: -moz-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: -o-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #661E04), color-stop(1, #98300B));
+	background-image: -webkit-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-color: #98300B;
+}
+
+.floorPage .trustBox {
+	border-color: #cdb49b
+}
+
+.floorPage ul.tickList li{
+	background: transparent url("images/icon-mark-darkred.png") no-repeat left 2px;
+	padding-left: 20px;
+}
+
+.floorPage ul.starBold li {
+	background: transparent url("images/icon-star-darkred.png") no-repeat left 5px;
+}
+
+.floorPage strong, .floorPage #serviceWhyFlood a {
+	color: #661e04;
+}
+
+/*   FOOTER
+=================*/
+
+#footer {
+	color: #666;
+	padding: 20px 0;
+	display: inline-block;
+	width: 100%;
+	font-family: Helvetica;
+}
+
+#footer section{
+	float: left;
+}
+
+#footer section ul {
+	clear: both;
+}
+
+#footer ul li {
+	float: left;
+	padding-right: 20px;
+}
+
+#footer p, #footer h4 {
+	margin-bottom: 10px;
+	font-weight: normal
+}
+
+#footer nav {
+	float: right;
+}
+
+#footer nav a {
+	float: left;
+	background: transparent url("images/icon-footer-socials.png") no-repeat 0 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+#footer nav a.tw {
+	background-position: 0 0;
+}
+
+#footer nav a.fb {
+	background-position: -32px 0;
+}
+
+#footer nav a.alborzsolution{
+	background: transparent url("images/logo-alborzsolution.png") no-repeat 0 0;
+	width: 52px;
+}
+
+#footer aside{
+	float: right;
+}
+
+#footer p {
+	clear: both;
+	float: right;
+	margin: 10px 0;
+}
