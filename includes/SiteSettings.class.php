@@ -50,11 +50,18 @@ class SiteSettings {
 		
 		//LiteFrame::IncludeLibraryJavascript('plugins/jquery.gotop.js');
 		//LiteFrame::IncludeJavascript('default.js');
-		
+		LiteFrame::IncludeJavascript('default.js');
 		if( LiteFrame::getActiveAction() === 'cleaning' ){
 			LiteFrame::IncludeJavascript('plugins.js');
 		}
 		
+		if( LiteFrame::getActiveAction() === 'contact' ){
+			
+			LiteFrame::IncludeLibraryJavascript(array('plugins/jquery.ba-bbq.min.js',));
+			LiteFrame::ExternalJavascript('http://maps.google.com/maps/api/js?sensor=false');
+			LiteFrame::IncludeLibraryJavascript('plugins/jquery.googlemap.js');
+		
+		}
 		
 	} /* </ SetCoreJavascript > */
 	

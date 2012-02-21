@@ -9,8 +9,12 @@
 		
 		public function process(){
 			
-			$title = "Page Title";
+			$title = "The Flood Masters Official Website";
 			switch(LiteFrame::getActiveAction()){	
+			
+				case "homepage" :
+					$title = "The Flood Masters Official Website";
+					break;
 			}
 			$this->results = $title;
 			
