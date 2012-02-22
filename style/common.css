@@ -2,6 +2,7 @@
   :: TheFloodMasters Cascading Stylesheet
   :: Author:  Farzin Fadamin ( Horus )
   :: Twitter: @farzinfadamin
+  :: Email Address: farzin.fadamin@mexo.co
   :: Version: 1.0 - FEB 2012
 
 
@@ -22,7 +23,7 @@
 
 body {
 	font-family: "Lucida Grande", arial, verdana, sans-serif;
-	background: transparent url("images/bg.png") repeat;
+	background: transparent url("../images/bg.png") repeat;
 	font-size: 13px;
 	font-weight: normal;
 	line-height: 1.8em;
@@ -52,6 +53,10 @@ strong { color: #0088cc; font-weight: inherit}
 
 .wp {
 	padding: 0 20px;
+}
+
+nav ul, nav li{
+	display: inline-block;
 }
 
 #wrapper {
@@ -111,28 +116,19 @@ strong { color: #0088cc; font-weight: inherit}
 }
 
 .button.more a{
-	padding: 8px 35px 8px 20px;
+	padding: 8px 35px 8px 10px;
+	position: relative;
 }
-
-.serviceSection .button.more figure{
-	background: transparent url("images/arrow-button-right.png") no-repeat 0 -2px;
-	width: 16px;
-	height: 8px;
-	top: -2px;
-	right: -10px;
-	position: absolute;
-	z-index: 10;
-	border: 0;
-}
-
 
 .button.more figure{
-	background: transparent url("images/arrow-right.png") no-repeat 0 -2px;
-	height: 25px;
-	 position: absolute;
-	 right: 10px;
-	 top: 0;
-	 width: 16px;
+	background: transparent url("../images/arrow-button-right.png") no-repeat 0 0;
+	width: 16px;
+	height: 8px;
+	top: 0;
+	right: -10px;
+	position: absolute;
+	z-index:10;
+	border:0;
 }
 
 .button.more span {
@@ -140,34 +136,11 @@ strong { color: #0088cc; font-weight: inherit}
 }
 
 
-
-/*	LOADING
-=================*/
-
-.loadingMsg, .successMsg, .errorMsg {
-    margin-left: 10px;
-    padding-left: 22px;
-}
-.loadingMsg {
-    background: url("images/loading.gif") no-repeat scroll 0 0 transparent;
-}
-.successMsg, .errorMsg {
-    background: url("images/sprite.png") no-repeat scroll left -836px transparent;
-    margin-left: 10px;
-    padding-left: 22px;
-}
-
-.errorMsg {
-    background-position: left -854px;
-}
-
-
-
 /*   HEADER
 =================*/
 
 #header {
-	margin: 30px 0 9px;
+	margin: 30px 0;
 	display: inline-block;
 	width: 100%;
 	font-family: Helvetica;
@@ -181,7 +154,7 @@ strong { color: #0088cc; font-weight: inherit}
 }
 #header h1 a {
 	float: left;
-	background: transparent url("images/logo-floodmasters.png") no-repeat;
+	background: transparent url("../images/logo-floodmasters.png") no-repeat;
 	width: 295px;
 	height: 65px;
 	overflow: hidden;
@@ -189,8 +162,9 @@ strong { color: #0088cc; font-weight: inherit}
 }
 
 #callSection {
+	padding-top: 15px;
 	float: right;
-	background: transparent url("images/fig-truck.png") no-repeat right 0;
+	background: transparent url("../images/fig-truck.png") no-repeat right 0;
 }
 
 #callSection span {
@@ -210,7 +184,7 @@ strong { color: #0088cc; font-weight: inherit}
 	font-size: 17px;
 	padding-right: 0;
 	padding-left: 30px;
-	background: transparent url("images/icon-clock.png") no-repeat left center;
+	background: transparent url("../images/icon-clock.png") no-repeat left center;
 }
 
 /*   MAIN MENU
@@ -218,7 +192,7 @@ strong { color: #0088cc; font-weight: inherit}
 
 #navMenu {
 	clear: both;
-	background: transparent url("images/bg-menu.png") no-repeat;
+	background: transparent url("../images/bg-menu.png") no-repeat;
 	width: 990px;
 	height: 52px;
 	padding: 0 4px 0 1px;
@@ -248,10 +222,10 @@ li.firstLevel > a {
 	height: 34px;
 	line-height: 34px;
 	padding-left: 5px;
-	-webkit-transition: all 0.05s linear 0s;
-	-moz-transition: all 0.05s linear 0s;
-	-o-transition: all 0.05s linear 0s;
-	transition: all 0.05s linear 0s;
+	-webkit-transition: all 0.1s linear 0s;
+	-moz-transition: all 0.1s linear 0s;
+	-o-transition: all 0.1s linear 0s;
+	transition: all 0.1s linear 0s;
 }
 
 li.firstLevel > a:hover, li.firstLevel.hovered > a {
@@ -259,7 +233,7 @@ li.firstLevel > a:hover, li.firstLevel.hovered > a {
 	text-shadow: none;
 	text-decoration: none;
 	background-color: #e4f3f9;
-	background: transparent url("images/bg-menu-hover.png") left top;
+	background: transparent url("../images/bg-menu-hover.png") left top;
 	text-shadow: 1px 1px 0 #fff;
 }
 
@@ -267,11 +241,9 @@ li.firstLevel > a span {
 	padding: 0 20px 0 15px;
 	float: left;
 	cursor: pointer;
-	position: relative;
 }
-
 li.firstLevel > a:hover span, li.firstLevel.hovered > a span{
-	background: transparent url("images/bg-menu-hover.png") right top;
+	background: transparent url("../images/bg-menu-hover.png") right top;
 	height: 34px;
 	display: block;
 }
@@ -281,10 +253,10 @@ li.firstLevel ul {
 	top: 30px;
 	left: 18px;
 	padding: 7px;
-	width: 250px;
+    width: 250px;
 	display: none;
-	border-radius: 0 5px 5px 5px;
-	-moz-border-radius: 0 5px 5px 5px;
+	border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
 	box-shadow: 1px 3px 3px rgba(0,0,0,0.4);
 	background-color: #e4f3f9;
 	line-height: 26px;
@@ -295,11 +267,10 @@ li.firstLevel ul {
 li.firstLevel.hovered{
 	position: relative;
 }
-
 li.firstLevel.hovered ul{
 	display: block;
 }
-
+	
 #navMenu li.secondLevel{
 	border-radius: 2px;
 	-moz-border-radius:2px;
@@ -315,7 +286,7 @@ li.secondLevel a {
 }
 
 li.secondLevel a:hover {
-	background: transparent url("images/bg-menu-items.png") repeat-x;
+	background: transparent url("../images/bg-menu-items.png") repeat-x;
 	color: #fff;
 	text-decoration: none;
 }
@@ -332,6 +303,7 @@ li.secondLevel a:hover {
 	border: 1px solid #d8d8d8;
 	display: inline-block;
 	position: relative;
+	z-index: -1;
 }
 
 #slideShow nav {
@@ -346,7 +318,7 @@ li.secondLevel a:hover {
 	width: 290px;
 	height: 108px;
 	position: relative;
-	background: transparent url("images/slide-navs.jpg") no-repeat 0 0;
+	background: transparent url("../images/slide-navs.jpg") no-repeat 0 0;
 	display: block;
 	cursor: pointer;
 }
@@ -359,9 +331,9 @@ li.secondLevel a:hover {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 271px;
+	width: 300px;
 	height: 83px;
-	background: transparent url("images/slide-nav-hover.png") no-repeat 0 0;
+	background: transparent url("../images/slide-nav-hover.png") no-repeat 0 0;
 	z-index: 10;
 	color: #fff;
 	display: none;
@@ -373,7 +345,7 @@ li.secondLevel a:hover {
 }
 
 #slideShow nav b {
-	font-size: 18px;
+	font-size: 22px;
 	margin-bottom: 10px;
 	display: block;
 	font-weight: normal
@@ -415,15 +387,16 @@ li.secondLevel a:hover {
 	bottom: 0;
 	left: 0;
 	width: 280px;
-	background: transparent url("images/bg-black-transparent.png") ;
+	background: transparent url("../images/bg-black-transparent.png") ;
 	color: #fff;
 	height: 35px;
 	line-height: 35px;
 	padding-left: 10px;
 }
 
-#slideShow nav .navMold span{
+#slideShow nav a.navMold span {
 	border-radius: 0 0 0 5px;
+	-moz-border-radius: 0 0 0 5px;
 }
 
 #slidePicture {
@@ -431,6 +404,8 @@ li.secondLevel a:hover {
 	height: 324px;
 	float: right;
 	position: relative;
+	border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
 }
 
 #slidePicture li{
@@ -446,6 +421,10 @@ li.secondLevel a:hover {
 	opacity: 1;
 }
 
+#slidePicture img {
+	border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+}
 #slidePicture section {
 	position: absolute;
 	bottom: 30px;
@@ -466,20 +445,20 @@ li.secondLevel a:hover {
 	width: 990px;
 	height: 10px;
 	float: left;
-	background: transparent url("images/bg-content-top.png") no-repeat;
+	background: transparent url("../images/bg-content-top.png") no-repeat;
 }
 
 .contentBox .middleContent, .contentBoxMedium .middleContent{
 	width: 985px;
 	padding: 10px 3px 10px 2px;
-	background: transparent url("images/bg-content-mid.png") repeat-y;
+	background: transparent url("../images/bg-content-mid.png") repeat-y;
 	display: block
 }
 
 .contentBox .bottomContent, .contentBoxMedium .bottomContent {
 	width: 990px;
 	height: 10px;
-	background: transparent url("images/bg-content-btm.png") no-repeat;
+	background: transparent url("../images/bg-content-btm.png") no-repeat;
 }
 
 .contentBoxMedium {
@@ -487,17 +466,17 @@ li.secondLevel a:hover {
 	float: right;
 }
 .contentBoxMedium .topContent {
-	background: transparent url("images/bg-content-med-top.png") no-repeat;
+	background: transparent url("../images/bg-content-med-top.png") no-repeat;
 }
 .contentBoxMedium .middleContent {
-	background: transparent url("images/bg-content-med-mid.png") repeat-y;
+	background: transparent url("../images/bg-content-med-mid.png") repeat-y;
 }
 .contentBoxMedium .bottomContent {
-	background: transparent url("images/bg-content-med-btm.png") no-repeat;
+	background: transparent url("../images/bg-content-med-btm.png") no-repeat;
 }
 
 #whatSection {
-	background: transparent url("images/bg-gradient-bottomtop.png") repeat-x left bottom;
+	background: transparent url("../images/bg-gradient-bottomtop.png") repeat-x left bottom;
 	padding: 30px 30px 50px;
 }
 
@@ -516,7 +495,7 @@ li.secondLevel a:hover {
 	float: left;
 	padding-right: 30px;
 	width: 430px;
-	background: transparent url("images/v-splitter.png") no-repeat right center;
+	background: transparent url("../images/v-splitter.png") no-repeat right center;
 }
 
 #whatSection ul {
@@ -524,24 +503,24 @@ li.secondLevel a:hover {
 }
 
 ul.starList li{
-	background: transparent url("images/icon-star.png") no-repeat left 5px;
+	background: transparent url("../images/icon-star.png") no-repeat left 5px;
 	padding-left: 20px;
 }
 
 ul.starBold li{
-	background: transparent url("images/icon-star-blue.png") no-repeat left 5px;
+	background: transparent url("../images/icon-star-blue.png") no-repeat left 5px;
 	padding-left: 20px;
 	margin-bottom: 10px;
 }
 
 ul.bullet li{
-	background: transparent url("images/icon-bullet.png") no-repeat left 7px;
+	background: transparent url("../images/icon-bullet.png") no-repeat left 7px;
 	padding-left: 20px;
 	margin-bottom: 5px;
 }
 
 ul.tickList li{
-	background: transparent url("images/icon-mark-blue.png") no-repeat left 2px;
+	background: transparent url("../images/icon-mark-blue.png") no-repeat left 2px;
 	padding-left: 20px;
 }
 
@@ -551,11 +530,15 @@ ul.col-2 li{
 	clear: none !important;
 }
 
+ul.setListMargin{
+	margin: 25px 50px !important;
+}
+
 #serviceColumns section{
 	width: 327px;
 	float: left;
 	padding-right: 2px;
-	background: transparent url("images/v-splitter2.png") no-repeat right top;
+	background: transparent url("../images/v-splitter2.png") no-repeat right top;
 	padding-bottom: 20px;
 }
 
@@ -582,7 +565,7 @@ ul.col-2 li{
 	left: 0;
 	top: 0;
 	width: 100%;
-	background: transparent url("images/bg-white-transparent.png") ;
+	background: transparent url("../images/bg-white-transparent.png") ;
 	height: 50px;
 	line-height: 50px;
 	font-size: 17px;
@@ -594,7 +577,7 @@ ul.col-2 li{
 #serviceColumns aside {
 	padding: 20px 20px 10px;
 	line-height: 18px;
-	background: transparent url("images/bg-gradient-topbottom.png") repeat-x left top;
+	background: transparent url("../images/bg-gradient-topbottom.png") repeat-x left top;
 }
 
 #serviceColumns ul {
@@ -614,7 +597,7 @@ ul.col-2 li{
 }
 
 footer.partners {
-	background: transparent url("images/bg-bottom-partners.jpg") no-repeat !important;
+	background: transparent url("../images/bg-bottom-partners.jpg") no-repeat !important;
 	width: 990px;
 	height: 35px !important;
 	line-height: 35px;
@@ -623,7 +606,7 @@ footer.partners {
 
 footer.partners a {
 	margin-right: 20px;
-	background: transparent url("images/arrow-small-blue.png") no-repeat right center;
+	background: transparent url("../images/arrow-small-blue.png") no-repeat right center;
 	padding-right: 10px;
 	color: #333;
 }
@@ -663,7 +646,7 @@ footer.partners a:hover {
 }
 
 .middleContent .trustBox {
-	background: transparent url("images/bg-box-trust.png") repeat-x left bottom;
+	background: transparent url("../images/bg-box-trust.png") repeat-x left bottom;
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 10px;
@@ -694,9 +677,9 @@ footer.partners a:hover {
 
 .callUs {
 	float: right;
-	background: transparent url("images/img-call.jpg") no-repeat;
+	background: transparent url("../images/img-call.jpg") no-repeat right bottom;
 	width: 500px;
-	height: 268px;
+	height: 290px;
 	position: relative;
 }
 
@@ -705,7 +688,7 @@ footer.partners a:hover {
 	height: 110px;
 	position: absolute;
 	top: 80px;
-	left: 75px;
+	left: 20px;
 }
 
 .callUs h2 {
@@ -720,7 +703,7 @@ footer.partners a:hover {
 
 .serviceSection {
 	margin: 20px 0;
-	background: transparent url("images/splitter-gray.png") no-repeat top center;
+	background: transparent url("../images/splitter-gray.png") no-repeat top center;
 	padding: 40px 20px 0;
 	display: inline;
 	float: left;
@@ -734,23 +717,6 @@ footer.partners a:hover {
 	width: 50%;
 	float: left;
 	margin-bottom: 20px;
-}
-
-.commercialPage .serviceSection aside,
-.residentialPage .serviceSection aside{
-	width: 60%;
-}
-
-.commercialPage  .serviceSection section,
-.residentialPage .serviceSection section{
-	width: 37%;
-}
-
-
-.commercialPage .serviceSection p,
-.residentialPage .serviceSection p{
-	line-height: 44px;
-
 }
 
 .serviceSection .centerized{
@@ -774,7 +740,7 @@ footer.partners a:hover {
 	height: 10px;
 	bottom: -11px;
 	margin-left: -210px;
-	background: transparent url("images/pic-shadow.png") no-repeat;
+	background: transparent url("../images/pic-shadow.png") no-repeat;
 }
 
 .ie6 .serviceSection figure i {
@@ -782,7 +748,7 @@ footer.partners a:hover {
 }
 
 .serviceSection figure.smallestPic i {
-	background-image: url("images/pic-shadow-smallest.png");
+	background-image: url("../images/pic-shadow-smallest.png");
 	width: 200px;
 	margin-left: -100px;
 }
@@ -792,7 +758,7 @@ footer.partners a:hover {
 }
 
 .serviceSection figure.smallPic i {
-	background-image: url("images/pic-shadow-small.png");
+	background-image: url("../images/pic-shadow-small.png");
 	width: 270px;
 	margin-left: -135px;
 }
@@ -802,7 +768,7 @@ footer.partners a:hover {
 }
 
 .serviceSection figure.mediumPic i { 
-	background-image: url("images/pic-shadow-medium.png");
+	background-image: url("../images/pic-shadow-medium.png");
 }
 
 .serviceSection figure.mediumPic img {
@@ -826,7 +792,7 @@ footer.partners a:hover {
 #serviceWhyFlood {
 	clear: both;
 	padding: 40px 20px 0;
-	background: transparent url("images/h-splitter-big.png") no-repeat top center;
+	background: transparent url("../images/h-splitter-big.png") no-repeat top center;
 }
 
 #serviceWhyFlood section{
@@ -850,7 +816,7 @@ footer.partners a:hover {
 }
 
 #serviceWhyFlood figure {
-	background: url("images/bg-pic-multi.png") no-repeat;
+	background: url("../images/bg-pic-multi.png") no-repeat;
 	position: relative;
 	float: right;
 	width: 342px;
@@ -903,17 +869,12 @@ footer.partners a:hover {
 
 .sideBox li a {
 	padding-left: 15px;
-	background: url("images/arrow-right-orange-small.png") no-repeat left 5px;
 	color: #333333;
 	font-weight: bold
 }
 
 .sideBox li ul{
 	display: none;
-}
-
-.sideBox li.opened a{
-	background-image: url("images/arrow-down-orange-small.png");
 }
 
 .sideBox li.opened ul {
@@ -926,7 +887,7 @@ footer.partners a:hover {
 }
 
 .sideBox li.opened ul li a{
-	background: url("images/arrow-dash.png") no-repeat left center !important;
+	background: url("../images/arrow-dash.png") no-repeat left center !important;
 	padding-left: 10px;
 }
 
@@ -948,14 +909,14 @@ footer.partners a:hover {
 }
 
 .sideBox.orangeColor li a{
-	background: url("images/arrow-right-orange-small.png") no-repeat left 5px;
+	background: url("../images/arrow-orange-small.png") no-repeat left 0;
 }
 
 .sideBox.orangeColor li.opened a{
-	background: url("images/arrow-down-orange-small.png") no-repeat left 5px;
+	background: url("../images/arrow-orange-small.png") no-repeat left -14px;
 }
 
-.sideBox.orangeColor header a{
+.sideBox.orangeColor header {
 	color: #ff840c;
 }
 
@@ -966,16 +927,16 @@ footer.partners a:hover {
 	-moz-border-radius: 5px;
 }
 
-.sideBox.greenColor header a{
+.sideBox.greenColor header {
 	color: #266b32;
 }
 
 .sideBox.greenColor li a{
-	background: url("images/arrow-right-green-small.png") no-repeat left 5px;
+	background: url("../images/arrow-green-small.png") no-repeat left 0;
 }
 
 .sideBox.greenColor li.opened a{
-	background: url("images/arrow-down-green-small.png") no-repeat left 5px;
+	background: url("../images/arrow-green-small.png") no-repeat left -14px;
 }
 
 
@@ -1013,367 +974,6 @@ footer.partners a:hover {
 	display: block;
 	margin-top: 10px;
 }
-
-/*   WATER PAGE
-=================*/
-
-.waterPage .trustBox {
-	border-color: #b9dcee
-}
-
-.waterPage .serviceSection {
-	background: transparent url("images/splitter-blue.png") no-repeat top center;
-}
-
-.waterPage ul.starBold li {
-	background: transparent url("images/icon-star-blue.png") no-repeat left 5px;
-}
-
-/*   FIRE PAGE
-=================*/
-
-.firePage .button a{
-	background-image: -ms-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	background-image: -moz-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	background-image: -o-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FF6701), color-stop(1, #FF9B59));
-	background-image: -webkit-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	background-image: linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	border-color: #d45c0c;
-	background-color: #FF6701;
-}
-.firePage .button a:hover {
-	background-image: -ms-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-image: -moz-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-image: -o-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FF6701), color-stop(1, #FF9B59));
-	background-image: -webkit-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-image: linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-color: #FF9B59;
-}
-
-.firePage .trustBox {
-	border-color: #f8c19f
-}
-
-.firePage .serviceSection {
-	background: transparent url("images/splitter-orange.png") no-repeat top center;
-}
-
-.firePage ul.tickList li{
-	background: transparent url("images/icon-mark-orange.png") no-repeat left 2px;
-	padding-left: 20px;
-}
-
-.firePage ul.starBold li {
-	background: transparent url("images/icon-star-orange.png") no-repeat left 5px;
-}
-
-.firePage strong, .firePage #serviceWhyFlood a {
-	color: #ff6600;
-}
-
-/*   MOLD PAGE
-=================*/
-
-.moldPage .button a {
-	background-image: -ms-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	background-image: -moz-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	background-image: -o-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #9A6733), color-stop(1, #C88C50));
-	background-image: -webkit-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	background-image: linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	border-color: #905d2a;
-	background-color: #9A6733;
-}
-
-.moldPage .button a:hover {
-	background-image: -ms-linear-gradient(top, #9A6733 0%, #C88C50 100%);
-	background-image: -moz-linear-gradient(top, #9A6733 0%, #C88C50 100%);
-	background-image: -o-linear-gradient(top, #9A6733 0%, #C88C50 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9A6733), color-stop(1, #C88C50));
-	background-image: -webkit-linear-gradient(top, #9A6733 0%, #C88C50 100%);
-	background-image: linear-gradient(top, #9A6733 0%, #C88C50 100%);
-	background-color: #C88C50
-}
-
-.moldPage .trustBox {
-	border-color: #cdb49b
-}
-
-.moldPage ul.tickList li{
-	background: transparent url("images/icon-mark-brown.png") no-repeat left 2px;
-	padding-left: 20px;
-}
-
-.moldPage ul.starBold li {
-	background: transparent url("images/icon-star-brown.png") no-repeat left 5px;
-}
-
-.moldPage strong, .moldPage #serviceWhyFlood a {
-	color: #996633;
-}
-
-/*   CLEANING PAGE
-=================*/
-
-.cleaningPage .button a{
-	background-image: -ms-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	background-image: -moz-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	background-image: -o-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FF6701), color-stop(1, #FF9B59));
-	background-image: -webkit-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	background-image: linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
-	border-color: #d45c0c;
-	background-color: #FF6701;
-}
-.cleaningPage .button a:hover {
-	background-image: -ms-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-image: -moz-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-image: -o-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FF6701), color-stop(1, #FF9B59));
-	background-image: -webkit-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-image: linear-gradient(top, #FF6701 0%, #FF9B59 100%);
-	background-color: #FF9B59;
-}
-
-.cleaningPage .trustBox {
-	border-color: #f8c19f
-}
-
-#cleaningServiceWrapper {
-	position: relative;
-	width: 990px;
-}
-
-.cleaningPage .serviceSection {
-	background: transparent url("images/splitter-blue.png") no-repeat top center;
-}
-
-.cleaningPage ul.tickList li{
-	background: transparent url("images/icon-mark-orange.png") no-repeat left 2px;
-	padding-left: 20px;
-}
-
-.cleaningPage ul.starBold li {
-	background: transparent url("images/icon-star-orange.png") no-repeat left 5px;
-}
-
-.cleaningPage .innerPage {
-	float: left;
-	width: 715px;
-	padding: 10px 20px 0;
-}
-
-.cleaningPage .serviceSection {
-	background: transparent url("images/splitter-gray-medium.png") no-repeat top center;
-	width: 705px;
-	padding: 40px 0 0;
-}
-
-.cleaningPage .serviceSection h2{
-	color: #000;
-}
-.cleaningPage .serviceSection section{
-	width: 45%;
-}
-
-.cleaningPage .serviceSection aside  {
-	width: 55%;
-}
-
-.cleaningPage ul li {
-	margin-bottom: 10px;
-}
-
-.cleaningPage strong, .cleaningPage #serviceWhyFlood a {
-	color: #ff6600;
-}
-
-.residentalServices h2{
-	color: #ed720e
-}
-
-.residentalServices .serviceSection{
-	background-image: url("images/splitter-orange-medium.png");
-}
-
-.commercialServices h2{
-	color: #0a8a46
-}
-
-.commercialServices strong{
-	color: #0a8a46
-}
-
-.commercialServices ul.tickList li{
-	background: transparent url("images/icon-mark-green.png") no-repeat left 2px;
-}
-
-.commercialServices ul.starBold li {
-	background: transparent url("images/icon-star-green.png") no-repeat left 5px;
-}
-
-.commercialServices .serviceSection{
-	background-image: url("images/splitter-green-medium.png");
-}
-
-
-/*   FLOOR PAGE
-=================*/
-.floorPage .button a{
-	background-image: -ms-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-	background-image: -moz-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-	background-image: -o-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #661E04), color-stop(1, #98300B));
-	background-image: -webkit-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-	background-image: linear-gradient(bottom, #661E04 0%, #98300B 100%);
-	border-color: #461402;
-	background-color: #661E04;
-}
-.floorPage .button a:hover {
-	background-image: -ms-linear-gradient(top, #661E04 0%, #98300B 100%);
-	background-image: -moz-linear-gradient(top, #661E04 0%, #98300B 100%);
-	background-image: -o-linear-gradient(top, #661E04 0%, #98300B 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #661E04), color-stop(1, #98300B));
-	background-image: -webkit-linear-gradient(top, #661E04 0%, #98300B 100%);
-	background-image: linear-gradient(top, #661E04 0%, #98300B 100%);
-	background-color: #98300B;
-}
-
-.floorPage .trustBox {
-	border-color: #cdb49b
-}
-
-.floorPage ul.tickList li{
-	background: transparent url("images/icon-mark-darkred.png") no-repeat left 2px;
-	padding-left: 20px;
-}
-
-.floorPage ul.starBold li {
-	background: transparent url("images/icon-star-darkred.png") no-repeat left 5px;
-}
-
-.floorPage strong, .floorPage #serviceWhyFlood a {
-	color: #661e04;
-}
-
-/*   FOOTER
-=================*/
-
-#footer {
-	color: #666;
-	padding: 20px 0;
-	display: inline-block;
-	width: 100%;
-	font-family: Helvetica;
-}
-
-#footer section{
-	float: left;
-}
-
-#footer section ul {
-	clear: both;
-}
-
-#footer ul li {
-	float: left;
-	padding-right: 20px;
-}
-
-#footer p, #footer h4 {
-	margin-bottom: 10px;
-	font-weight: normal
-}
-
-#footer nav {
-	float: right;
-}
-
-#footer nav a {
-	float: left;
-	background: transparent url("images/icon-footer-socials.png") no-repeat 0 0;
-	width: 32px;
-	height: 32px;
-	text-indent: -9999px;
-	overflow: hidden;
-	margin-left: 10px;
-}
-
-#footer nav a.tw {
-	background-position: 0 0;
-}
-
-#footer nav a.fb {
-	background-position: -32px 0;
-}
-
-#footer nav a.alborzsolution{
-	background: transparent url("images/logo-alborzsolution.png") no-repeat 0 0;
-	width: 52px;
-}
-
-#footer nav a.mexo{
-	background: transparent url("http://mexo.co/mexo_copyright_logo.png") no-repeat 0 0;
-	width: 86px;
-	margin-top: 10px;
-	
-}
-
-#footer aside{
-	float: right;
-}
-
-#footer p {
-	clear: both;
-	float: right;
-	margin: 10px 0;
-}
-
-
-/*   FLOOR PAGE and SEWAGE PAGE
-=========================*/
-.floorPage .button a, .sewagePage .button a {
-background-image: -ms-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-background-image: -moz-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-background-image: -o-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #661E04), color-stop(1, #98300B));
-background-image: -webkit-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-background-image: linear-gradient(bottom, #661E04 0%, #98300B 100%);
-border-color: #461402;
-background-color: #661E04;
-}
-.floorPage .button a:hover, .sewagePage .button a:hover{
-background-image: -ms-linear-gradient(top, #661E04 0%, #98300B 100%);
-background-image: -moz-linear-gradient(top, #661E04 0%, #98300B 100%);
-background-image: -o-linear-gradient(top, #661E04 0%, #98300B 100%);
-background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #661E04), color-stop(1, #98300B));
-background-image: -webkit-linear-gradient(top, #661E04 0%, #98300B 100%);
-background-image: linear-gradient(top, #661E04 0%, #98300B 100%);
-background-color: #98300B;
-}
-
-.floorPage .trustBox, .sewagePage .trustBox {
-border-color: #cdb49b
-}
-
-.floorPage ul.tickList li, .sewagePage ul.tickList li{
-background: transparent url("images/icon-mark-darkred.png") no-repeat left 2px;
-padding-left: 20px;
-}
-
-.floorPage ul.starBold li, .sewagePage ul.starBold li {
-background: transparent url("images/icon-star-darkred.png") no-repeat left 5px;
-}
-
-.floorPage strong, .floorPage #serviceWhyFlood a,
-.sewagePage strong, .sewagePage #serviceWhyFlood a {
-color: #661e04;
-}
-
-
-
 
 .contactPage strong{
 	color: #333
@@ -1423,7 +1023,6 @@ color: #661e04;
 	border-radius: 4px;
 	-moz-border-radius: 4px;
 	border: 1px solid #999;
-	margin-top: 5px;
 }
 
 #contactForm textarea {
@@ -1467,7 +1066,7 @@ color: #661e04;
 }
 
 #contactSidebar {
-	/*background: transparent url("images/bg-sidebar.png") no-repeat left top;*/
+	background: transparent url("../images/bg-sidebar.png") no-repeat left top;
 	float: left;
 	padding-left: 30px;
 	width: 405px
@@ -1482,11 +1081,18 @@ color: #661e04;
 	padding: 10px;
 	background-color: #fff;
 	border: 1px solid #9ea0a1;
-	display: inline-block;
+	float: left;
 }
 
 #map img {
 	display: block
+}
+
+#map div {
+	background: transparent url("../images/icon-address.png") no-repeat left top;
+	padding-left: 30px;
+	display: inline-block;
+	margin-top: 15px;
 }
 
 #twitterAndVcard span a{
@@ -1500,36 +1106,275 @@ color: #661e04;
 }
 
 #twitterAndVcard span.vCard a{
-	background: transparent url("images/btn-vcard.png") no-repeat;
+	background: transparent url("../images/btn-vcard.png") no-repeat;
 	width: 215px;
 	height: 95px;
 	margin-top: 15px;
 }
 
 #twitterAndVcard span.twitter a{
-	background: transparent url("images/icon-twitter.png") no-repeat;
+	background: transparent url("../images/icon-twitter.png") no-repeat;
 	width: 113px;
 	height: 123px;
 }
 
+/*   WATER PAGE
+=================*/
+
+.waterPage .trustBox {
+	border-color: #b9dcee
+}
+
+.waterPage .serviceSection {
+	background: transparent url("../images/splitter-blue.png") no-repeat top center;
+}
+
+.waterPage ul.starBold li {
+	background: transparent url("../images/icon-star-blue.png") no-repeat left 5px;
+}
+
+/*   FIRE PAGE
+=================*/
+
+.firePage .button a{
+	background-image: -ms-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -moz-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -o-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FF6701), color-stop(1, #FF9B59));
+	background-image: -webkit-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	border-color: #d45c0c;
+	background-color: #FF6701;
+}
+.firePage .button a:hover {
+	background-image: -ms-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -moz-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -o-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FF6701), color-stop(1, #FF9B59));
+	background-image: -webkit-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-color: #FF9B59;
+}
+
+.firePage .trustBox {
+	border-color: #f8c19f
+}
+
+.firePage .serviceSection {
+	background: transparent url("../images/splitter-orange.png") no-repeat top center;
+}
+
+.firePage ul.tickList li{
+	background: transparent url("../images/icon-mark-orange.png") no-repeat left 2px;
+	padding-left: 20px;
+}
+
+.firePage ul.starBold li {
+	background: transparent url("../images/icon-star-orange.png") no-repeat left 5px;
+}
+
+.firePage strong, .firePage #serviceWhyFlood a {
+	color: #ff6600;
+}
+
+/*   MOLD PAGE
+=================*/
+
+.moldPage .button a{
+	background-image: -ms-linear-gradient(top, #65A965 0%, #397739 100%);
+	background-image: -moz-linear-gradient(top, #65A965 0%, #397739 100%);
+	background-image: -o-linear-gradient(top, #65A965 0%, #397739 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #65A965), color-stop(1, #397739));
+	background-image: -webkit-linear-gradient(top, #65A965 0%, #397739 100%);
+	background-image: linear-gradient(top, #65A965 0%, #397739 100%);
+	border-color: #336633;
+	background-color: #65A965;
+}
+
+.moldPage .button a:hover{
+	background-image: -ms-linear-gradient(bottom, #65A965 0%, #397739 100%);
+	background-image: -moz-linear-gradient(bottom, #65A965 0%, #397739 100%);
+	background-image: -o-linear-gradient(bottom, #65A965 0%, #397739 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-sbottom(0, #65A965), color-stop(1, #397739));
+	background-image: -webkit-linear-gradient(bottom, #65A965 0%, #397739 100%);
+	background-image: linear-gradient(bottom, #65A965 0%, #397739 100%);
+	background-color: #C88C50
+}
+
+.moldPage .trustBox {
+	border-color: #84bf84
+}
+
+.moldPage ul.tickList li{
+	background: transparent url("../images/icon-mark-greenlight.png") no-repeat left 2px;
+	padding-left: 20px;
+}
+
+.moldPage ul.starBold li {
+	background: transparent url("../images/icon-star-greenlight.png") no-repeat left 5px;
+}
+
+.moldPage strong, .moldPage #serviceWhyFlood a {
+	color: #65a965;
+}
+
+/*   CLEANING PAGE
+=================*/
+
+.cleaningPage .button a{
+	background-image: -ms-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -moz-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -o-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #FF6701), color-stop(1, #FF9B59));
+	background-image: -webkit-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	background-image: linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
+	border-color: #d45c0c;
+	background-color: #FF6701;
+}
+.cleaningPage .button a:hover {
+	background-image: -ms-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -moz-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -o-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FF6701), color-stop(1, #FF9B59));
+	background-image: -webkit-linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-image: linear-gradient(top, #FF6701 0%, #FF9B59 100%);
+	background-color: #FF9B59;
+}
+
+.cleaningPage .trustBox {
+	border-color: #f8c19f
+}
+
+#cleaningServiceWrapper {
+	position: relative;
+	width: 990px;
+}
+
+.cleaningPage .serviceSection {
+	background: transparent url("../images/splitter-blue.png") no-repeat top center;
+}
+
+.cleaningPage ul.tickList li{
+	background: transparent url("../images/icon-mark-orange.png") no-repeat left 2px;
+	padding-left: 20px;
+}
+
+.cleaningPage ul.starBold li {
+	background: transparent url("../images/icon-star-orange.png") no-repeat left 5px;
+}
+
+.cleaningPage .innerPage {
+	float: left;
+	width: 715px;
+	padding: 10px 20px 0;
+}
+
+.cleaningPage .serviceSection {
+	background: transparent url("../images/splitter-gray-medium.png") no-repeat top center;
+	width: 705px;
+	padding: 40px 0 0;
+}
+
+.cleaningPage .serviceSection h2{
+	color: #000;
+}
+.cleaningPage .serviceSection section{
+	width: 45%;
+}
+
+.cleaningPage .serviceSection aside  {
+	width: 55%;
+}
+
+.cleaningPage ul li {
+	margin-bottom: 10px;
+}
+
+.cleaningPage strong, .cleaningPage #serviceWhyFlood a {
+	color: #ff6600;
+}
+
+.residentalServices h2{
+	color: #ed720e
+}
+
+.residentalServices .serviceSection{
+	background-image: url("../images/splitter-orange-medium.png");
+}
+
+.commercialServices h2{
+	color: #0a8a46
+}
+
+.commercialServices strong{
+	color: #0a8a46
+}
+
+.commercialServices ul.tickList li{
+	background: transparent url("../images/icon-mark-green.png") no-repeat left 2px;
+}
+
+.commercialServices ul.starBold li {
+	background: transparent url("../images/icon-star-green.png") no-repeat left 5px;
+}
+
+.commercialServices .serviceSection{
+	background-image: url("../images/splitter-green-medium.png");
+}
 
 
+/*   FLOOR PAGE and SEWAGE PAGE
+=========================*/
+.floorPage .button a, .sewagePage .button a {
+	background-image: -ms-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: -moz-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: -o-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #661E04), color-stop(1, #98300B));
+	background-image: -webkit-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	border-color: #461402;
+	background-color: #661E04;
+}
+.floorPage .button a:hover, .sewagePage .button a:hover{
+	background-image: -ms-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: -moz-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: -o-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #661E04), color-stop(1, #98300B));
+	background-image: -webkit-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-color: #98300B;
+}
 
+.floorPage .trustBox, .sewagePage .trustBox {
+	border-color: #cdb49b
+}
 
+.floorPage ul.tickList li, .sewagePage ul.tickList li{
+	background: transparent url("../images/icon-mark-darkred.png") no-repeat left 2px;
+	padding-left: 20px;
+}
 
+.floorPage ul.starBold li, .sewagePage ul.starBold li {
+	background: transparent url("../images/icon-star-darkred.png") no-repeat left 5px;
+}
+
+.floorPage strong, .floorPage #serviceWhyFlood a,
+.sewagePage strong, .sewagePage #serviceWhyFlood a {
+	color: #661e04;
+}
 
 /*   COMMERCIAL & RESIDENTIAL
 =================*/
 .commercialPage hgroup, .residentialPage hgroup {
-margin-top: 40px;
+	margin-top: 40px;
 }
 
 .commercialPage strong, .commercialPage .button a{
-color: #296b32;
+	color: #81cb32;
 }
 
 .commercialPage .button {
-float: left;
+	float: left;
 }
 
 .commercialPage .button a {
@@ -1539,7 +1384,7 @@ float: left;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #286C33), color-stop(1, #45A155));
 	background-image: -webkit-linear-gradient(bottom, #286C33 0%, #45A155 100%);
 	background-image: linear-gradient(bottom, #286C33 0%, #45A155 100%);
-	background-color: #286C33;.button a
+	background-color: #286C33;
 	border-color: #1b5523;
 	color: #fff;
 }
@@ -1589,4 +1434,70 @@ float: left;
 
 .residentialPage .button.more figure {
 	background-position: 0 -38px;
+}
+
+/*   FOOTER
+=================*/
+
+#footer {
+	color: #666;
+	padding: 20px 0;
+	display: inline-block;
+	width: 100%;
+	font-family: Helvetica;
+}
+
+#footer section{
+	float: left;
+}
+
+#footer section ul {
+	clear: both;
+}
+
+#footer ul li {
+	float: left;
+	padding-right: 20px;
+}
+
+#footer p, #footer h4 {
+	margin-bottom: 10px;
+	font-weight: normal
+}
+
+#footer nav {
+	float: right;
+}
+
+#footer nav a {
+	float: left;
+	background: transparent url("../images/icon-footer-socials.png") no-repeat 0 0;
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+#footer nav a.tw {
+	background-position: 0 0;
+}
+
+#footer nav a.fb {
+	background-position: -32px 0;
+}
+
+#footer nav a.alborzsolution{
+	background: transparent url("../images/logo-alborzsolution.png") no-repeat 0 0;
+	width: 52px;
+}
+
+#footer aside{
+	float: right;
+}
+
+#footer p {
+	clear: both;
+	float: right;
+	margin: 10px 0;
 }
