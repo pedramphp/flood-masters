@@ -15,8 +15,7 @@ class ContactUsPage {
 	private static $userEmailTemplate;
 	private static $emailTitle = 'The Flood Masters Website';
 	//private static $to = 'info@thefloodmasters.com'; //info@alhussaintv.tv
-	private static $to = 'arahimza@yahoo.com';
-	private static $admin = 'pedramphp@gmail.com';
+	private static $to = 'info@thefloodmasters.com';
 	private static $subject = "New Message: The Flood Masters Website Contact Us Form";
 	private static $emailLogo;
 	private static $bgTop;
@@ -103,8 +102,7 @@ class ContactUsPage {
 		$headersUser .= 'MIME-Version: 1.0' . "\r\n";
 		$headersUser .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		
-		if( mail( self::$admin, self::$subject, $message, $headers ) && 
-			mail( self::$to, self::$subject, $message, $headers ) &&
+		if( mail( self::$to, self::$subject, $message, $headers ) &&
 			mail( $this->emailAddress, self::$subject, $userMessage, $headersUser )){
 			return true;
 		}else{

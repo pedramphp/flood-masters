@@ -4,7 +4,7 @@ $(document).ready(function() {
 	if ($sb[0] && !($.browser.msie && !$.support.opacity)){
 		var top = $sb.offset().top - parseFloat($sb.css('margin-top').replace(/auto/, 0));
 		$(window).scroll(function () {
-			if ($(this).scrollTop() >= top) {
+			if ($(this).scrollTop() >= top && $(this).scrollTop() <= $("#footer").position().top - 400) {
 				$sb.addClass('fixed');
 			}else{
 				$sb.removeClass('fixed');

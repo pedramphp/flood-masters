@@ -166,11 +166,20 @@ strong { color: #0088cc; font-weight: inherit}
 /*   HEADER
 =================*/
 
+#emergency-service{
+	color: #006699;
+    font-size: 1.2em;
+    left: 0;
+    position: absolute;
+    top: 77px;
+}
+
 #header {
-	margin: 30px 0 9px;
+	margin: 18px 0 20px;
 	display: inline-block;
 	width: 100%;
 	font-family: Helvetica;
+	position:  relative;
 }
 
 #header h1{
@@ -190,6 +199,7 @@ strong { color: #0088cc; font-weight: inherit}
 
 #callSection {
 	float: right;
+	margin-top:  20px;
 	background: transparent url("images/fig-truck.png") no-repeat right 0;
 }
 
@@ -208,9 +218,9 @@ strong { color: #0088cc; font-weight: inherit}
 
 #callSection span.timer {
 	font-size: 17px;
-	padding-right: 0;
+	padding-right: 130px;
 	padding-left: 30px;
-	background: transparent url("images/icon-clock.png") no-repeat left center;
+	/*background: transparent url("images/icon-clock.png") no-repeat left center;*/
 }
 
 /*   MAIN MENU
@@ -241,7 +251,7 @@ strong { color: #0088cc; font-weight: inherit}
 li.firstLevel > a {
 	color: #fff;
 	float: left;
-	margin: 0 18px;
+	margin: 0 37px;
 	text-shadow: 1px 1px 0 #105975;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
@@ -281,7 +291,7 @@ li.firstLevel ul {
 	top: 30px;
 	left: 18px;
 	padding: 7px;
-	width: 250px;
+	width: 225px;
 	display: none;
 	border-radius: 0 5px 5px 5px;
 	-moz-border-radius: 0 5px 5px 5px;
@@ -359,7 +369,7 @@ li.secondLevel a:hover {
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 271px;
+	width: 270px;
 	height: 83px;
 	background: transparent url("images/slide-nav-hover.png") no-repeat 0 0;
 	z-index: 10;
@@ -414,11 +424,13 @@ li.secondLevel a:hover {
 	position: absolute;
 	bottom: 0;
 	left: 0;
+	font-size: 20px;
+    font-weight: bold;
 	width: 280px;
 	background: transparent url("images/bg-black-transparent.png") ;
 	color: #fff;
-	height: 35px;
-	line-height: 35px;
+	height: 40px;
+	line-height: 40px;
 	padding-left: 10px;
 }
 
@@ -444,6 +456,11 @@ li.secondLevel a:hover {
 #slidePicture li.active {
 	z-index: 1;
 	opacity: 1;
+}
+
+#slidePicture li img {
+	border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
 }
 
 #slidePicture section {
@@ -626,6 +643,7 @@ footer.partners a {
 	background: transparent url("images/arrow-small-blue.png") no-repeat right center;
 	padding-right: 10px;
 	color: #333;
+	font-size: 15px;
 }
 
 footer.partners a:hover {
@@ -633,8 +651,11 @@ footer.partners a:hover {
 }
 
 .innerPage {
-	padding: 20px 0 0;
 	font-size: 14px;
+}
+
+.innerPage ul, .innerPage ol {
+	margin: 10px 0 30px 30px
 }
 
 .innerPage p {
@@ -650,7 +671,9 @@ footer.partners a:hover {
 
 .middleContent hgroup {
 	margin: 20px;
-	display: block;
+	float: left;
+	clear: both;
+	width: 945px;
 }
 
 .middleContent hgroup h1 {
@@ -662,8 +685,12 @@ footer.partners a:hover {
 	font-weight: normal;
 }
 
+#topServicesPage {
+	padding-bottom: 20px;
+}
+
 .middleContent .trustBox {
-	background: transparent url("images/bg-box-trust.png") repeat-x left bottom;
+	background: #FFF url("images/bg-box-trust.png") repeat-x left bottom;
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 10px;
@@ -694,39 +721,41 @@ footer.partners a:hover {
 
 .callUs {
 	float: right;
-	background: transparent url("images/img-call.jpg") no-repeat;
+	background: transparent url("images/img-call.png") no-repeat;
 	width: 500px;
 	height: 268px;
 	position: relative;
 }
 
 .callUs span {
-	width: 300px;
 	height: 110px;
+	left: 3px;
 	position: absolute;
 	top: 80px;
-	left: 75px;
+	width: 380px;
 }
 
 .callUs h2 {
-	font-size: 30px;
+	font-size: 36px;
 }
 
 .callUs h6 {
-	font-size: 13px;
+	font-size: 15px;
 	margin: 5px 0 10px;
 	font-weight: normal
 }
 
 .serviceSection {
-	margin: 20px 0;
+	margin: 0;
 	background: transparent url("images/splitter-gray.png") no-repeat top center;
-	padding: 40px 20px 0;
+	padding: 20px;
 	display: inline;
 	float: left;
 	width: 945px;
 	display: inline;
 }
+
+.serviceSection aside p { /*margin: 0;*/}
 
 .ie6 .serviceSection, .ie7 .serviceSection {width: 944px;}
 
@@ -749,7 +778,7 @@ footer.partners a:hover {
 
 .commercialPage .serviceSection p,
 .residentialPage .serviceSection p{
-	line-height: 44px;
+	line-height: 35px;
 
 }
 
@@ -807,11 +836,6 @@ footer.partners a:hover {
 
 .serviceSection figure.mediumPic img {
 	width: 385px;
-}
-
-
-.serviceSection ul, .serviceSection ol {
-	margin: 10px 0 10px 30px
 }
 
 .serviceSection ul li, .serviceSection ol li {
@@ -984,6 +1008,8 @@ footer.partners a:hover {
 	font-weight: normal
 }
 
+#areaMaps {margin: 0;}
+
 #areaMaps li{
 	float: left;
 	width: 297px;
@@ -1017,6 +1043,14 @@ footer.partners a:hover {
 /*   WATER PAGE
 =================*/
 
+.waterPage.contentBox .topContent{
+	background: transparent url("images/bg-content-top-blue.png") no-repeat;
+}
+
+.waterPage .middleContent hgroup, .waterPage #topServicesPage {
+	background-color: #F5FCFF;
+}
+
 .waterPage .trustBox {
 	border-color: #b9dcee
 }
@@ -1031,6 +1065,14 @@ footer.partners a:hover {
 
 /*   FIRE PAGE
 =================*/
+
+.firePage.contentBox .topContent{
+	background: transparent url("images/bg-content-top-orange.png") no-repeat;
+}
+
+.firePage .middleContent hgroup, .firePage #topServicesPage {
+	background-color: #FFF8F2;
+}
 
 .firePage .button a{
 	background-image: -ms-linear-gradient(bottom, #FF6701 0%, #FF9B59 100%);
@@ -1076,42 +1118,50 @@ footer.partners a:hover {
 /*   MOLD PAGE
 =================*/
 
-.moldPage .button a {
-	background-image: -ms-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	background-image: -moz-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	background-image: -o-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #9A6733), color-stop(1, #C88C50));
-	background-image: -webkit-linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	background-image: linear-gradient(bottom, #9A6733 0%, #C88C50 100%);
-	border-color: #905d2a;
-	background-color: #9A6733;
+.moldPage.contentBox .topContent{
+	background: transparent url("images/bg-content-top-gray.png") no-repeat !important;
 }
 
-.moldPage .button a:hover {
-	background-image: -ms-linear-gradient(top, #9A6733 0%, #C88C50 100%);
-	background-image: -moz-linear-gradient(top, #9A6733 0%, #C88C50 100%);
-	background-image: -o-linear-gradient(top, #9A6733 0%, #C88C50 100%);
-	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #9A6733), color-stop(1, #C88C50));
-	background-image: -webkit-linear-gradient(top, #9A6733 0%, #C88C50 100%);
-	background-image: linear-gradient(top, #9A6733 0%, #C88C50 100%);
+.moldPage .middleContent hgroup, .moldPage #topServicesPage {
+	background-color: #F9F9F9;
+}
+
+.moldPage .button a{
+	background-image: -ms-linear-gradient(top, #65A965 0%, #397739 100%);
+	background-image: -moz-linear-gradient(top, #65A965 0%, #397739 100%);
+	background-image: -o-linear-gradient(top, #65A965 0%, #397739 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #65A965), color-stop(1, #397739));
+	background-image: -webkit-linear-gradient(top, #65A965 0%, #397739 100%);
+	background-image: linear-gradient(top, #65A965 0%, #397739 100%);
+	border-color: #336633;
+	background-color: #65A965;
+}
+
+.moldPage .button a:hover{
+	background-image: -ms-linear-gradient(bottom, #65A965 0%, #397739 100%);
+	background-image: -moz-linear-gradient(bottom, #65A965 0%, #397739 100%);
+	background-image: -o-linear-gradient(bottom, #65A965 0%, #397739 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-sbottom(0, #65A965), color-stop(1, #397739));
+	background-image: -webkit-linear-gradient(bottom, #65A965 0%, #397739 100%);
+	background-image: linear-gradient(bottom, #65A965 0%, #397739 100%);
 	background-color: #C88C50
 }
 
 .moldPage .trustBox {
-	border-color: #cdb49b
+	border-color: #84bf84
 }
 
 .moldPage ul.tickList li{
-	background: transparent url("images/icon-mark-brown.png") no-repeat left 2px;
+	background: transparent url("images/icon-mark-greenlight.png") no-repeat left 2px;
 	padding-left: 20px;
 }
 
 .moldPage ul.starBold li {
-	background: transparent url("images/icon-star-brown.png") no-repeat left 5px;
+	background: transparent url("images/icon-star-greenlight.png") no-repeat left 5px;
 }
 
 .moldPage strong, .moldPage #serviceWhyFlood a {
-	color: #996633;
+	color: #65a965;
 }
 
 /*   CLEANING PAGE
@@ -1162,13 +1212,13 @@ footer.partners a:hover {
 .cleaningPage .innerPage {
 	float: left;
 	width: 715px;
-	padding: 10px 20px 0;
+	padding: 0 20px;
 }
 
 .cleaningPage .serviceSection {
 	background: transparent url("images/splitter-gray-medium.png") no-repeat top center;
 	width: 705px;
-	padding: 40px 0 0;
+	padding: 20px 0 0;
 }
 
 .cleaningPage .serviceSection h2{
@@ -1190,11 +1240,11 @@ footer.partners a:hover {
 	color: #ff6600;
 }
 
-.residentalServices h2{
+.residentialServices h2{
 	color: #ed720e
 }
 
-.residentalServices .serviceSection{
+.residentialServices .serviceSection{
 	background-image: url("images/splitter-orange-medium.png");
 }
 
@@ -1231,6 +1281,7 @@ footer.partners a:hover {
 	border-color: #461402;
 	background-color: #661E04;
 }
+
 .floorPage .button a:hover {
 	background-image: -ms-linear-gradient(top, #661E04 0%, #98300B 100%);
 	background-image: -moz-linear-gradient(top, #661E04 0%, #98300B 100%);
@@ -1269,6 +1320,10 @@ footer.partners a:hover {
 	font-family: Helvetica;
 }
 
+#footer p {
+	clear: both;
+}
+
 #footer section{
 	float: left;
 }
@@ -1280,11 +1335,6 @@ footer.partners a:hover {
 #footer ul li {
 	float: left;
 	padding-right: 20px;
-}
-
-#footer p, #footer h4 {
-	margin-bottom: 10px;
-	font-weight: normal
 }
 
 #footer nav {
@@ -1325,66 +1375,85 @@ footer.partners a:hover {
 	float: right;
 }
 
-#footer p {
-	clear: both;
-	float: right;
-	margin: 10px 0;
+#footer aside span {
+	color:#0088CC
 }
+
+#footer aside p {
+	float: right;
+}
+
 
 
 /*   FLOOR PAGE and SEWAGE PAGE
 =========================*/
+.floorPage.contentBox .topContent, .sewagePage.contentBox .topContent{
+	background: transparent url("images/bg-content-top-gray.png") no-repeat !important;
+}
+
+.floorPage .middleContent hgroup, .floorPage #topServicesPage,
+.sewagePage .middleContent hgroup, .sewagePage #topServicesPage{
+	background-color: #F9F9F9;
+}
+
 .floorPage .button a, .sewagePage .button a {
-background-image: -ms-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-background-image: -moz-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-background-image: -o-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #661E04), color-stop(1, #98300B));
-background-image: -webkit-linear-gradient(bottom, #661E04 0%, #98300B 100%);
-background-image: linear-gradient(bottom, #661E04 0%, #98300B 100%);
-border-color: #461402;
-background-color: #661E04;
+	background-image: -ms-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: -moz-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: -o-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #661E04), color-stop(1, #98300B));
+	background-image: -webkit-linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	background-image: linear-gradient(bottom, #661E04 0%, #98300B 100%);
+	border-color: #461402;
+	background-color: #661E04;
 }
 .floorPage .button a:hover, .sewagePage .button a:hover{
-background-image: -ms-linear-gradient(top, #661E04 0%, #98300B 100%);
-background-image: -moz-linear-gradient(top, #661E04 0%, #98300B 100%);
-background-image: -o-linear-gradient(top, #661E04 0%, #98300B 100%);
-background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #661E04), color-stop(1, #98300B));
-background-image: -webkit-linear-gradient(top, #661E04 0%, #98300B 100%);
-background-image: linear-gradient(top, #661E04 0%, #98300B 100%);
-background-color: #98300B;
+	background-image: -ms-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: -moz-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: -o-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #661E04), color-stop(1, #98300B));
+	background-image: -webkit-linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-image: linear-gradient(top, #661E04 0%, #98300B 100%);
+	background-color: #98300B;
 }
 
 .floorPage .trustBox, .sewagePage .trustBox {
-border-color: #cdb49b
+	border-color: #cdb49b
 }
 
 .floorPage ul.tickList li, .sewagePage ul.tickList li{
-background: transparent url("images/icon-mark-darkred.png") no-repeat left 2px;
-padding-left: 20px;
+	background: transparent url("images/icon-mark-darkred.png") no-repeat left 2px;
+	padding-left: 20px;
 }
 
 .floorPage ul.starBold li, .sewagePage ul.starBold li {
-background: transparent url("images/icon-star-darkred.png") no-repeat left 5px;
+	background: transparent url("images/icon-star-darkred.png") no-repeat left 5px;
 }
 
 .floorPage strong, .floorPage #serviceWhyFlood a,
 .sewagePage strong, .sewagePage #serviceWhyFlood a {
-color: #661e04;
+	color: #661e04;
 }
-
-
 
 
 .contactPage strong{
 	color: #333
 }
 
+#contactForm input[type="text"].required{
+	background: url("images/required.png") no-repeat scroll 100% 0 transparent
+}
+
+#contactForm input[type="text"].required:focus{
+	background: none;
+}
+
+
 .contactPage .callUs span{
 	top: 120px;
 }
 
 .contactPage hgroup{
-	float: left;
+	width: 400px;
 }
 
 .contactParagraph {
@@ -1521,15 +1590,15 @@ color: #661e04;
 /*   COMMERCIAL & RESIDENTIAL
 =================*/
 .commercialPage hgroup, .residentialPage hgroup {
-margin-top: 40px;
+	margin-top: 20px;
 }
 
 .commercialPage strong, .commercialPage .button a{
-color: #296b32;
+	color: #296b32;
 }
 
 .commercialPage .button {
-float: left;
+	float: left;
 }
 
 .commercialPage .button a {

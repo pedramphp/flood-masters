@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	contact.init();
-	var address = '6201 Leesburg Pike Suite# 6 Falls Church, VA 22044';
+	var address = '8453 Tyco Road Suite G, Vienna, VA 22182';
 	var map = $("#map_canvas").gMap({
 		address: address,
 		zoom: 16,
@@ -42,6 +42,23 @@ var contact = {
 	submit: function(event){
 		event.preventDefault();
 		if( !this.enable ){ return }
+		var status = true;
+		$("#contactForm :text").each(function(){
+			if( !status ) {return; }
+			if( $.trim( $(this).val() ) === "" ){
+				alert("Please enter your " + $(this).prev().text());
+				status = false;
+				return;
+			}
+			
+			if( $(this).attr("id") == "contact-email" && /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/.test($(this).val()) === false){
+				alert("Please enter a valid email address");
+				status = false;
+			}
+		
+		});
+		if( !status ) {return; }
+		
 		var $form = $(event.currentTarget).parents("form");
 		
 		
