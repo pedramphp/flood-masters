@@ -9,13 +9,16 @@ class ContactUsPage {
 	private $rate;
 	private $reason;
 	private $message;
-	
+	private $company;
+	private $fax;
+
 	
 	private static $emailTemplate;
 	private static $userEmailTemplate;
 	private static $emailTitle = 'The Flood Masters Website';
 	//private static $to = 'info@thefloodmasters.com'; //info@alhussaintv.tv
 	private static $to = 'info@thefloodmasters.com';
+	//private static $to = 'pedramphp@gmail.com';
 	private static $subject = "New Message: The Flood Masters Website Contact Us Form";
 	private static $emailLogo;
 	private static $bgTop;
@@ -51,6 +54,8 @@ class ContactUsPage {
 		$this->address = 		$request['contact-address'];
 		$this->phone =			$request['contact-phone'];
 		$this->message =		$request['contact-message'];
+		$this->company =		$request['contact-company'];
+		$this->fax =			$request['contact-fax'];
 		
 		$this->buildServices();
 	}
@@ -69,7 +74,7 @@ class ContactUsPage {
 		
 		$message = file_get_contents(self::$emailTemplate);
 		
-		$arrayTplVars = array('{bgTop}','{bgMiddle}','{bgBottom}','{tick}','{emailLogo}','{fullName}','{emailAddress}','{address}','{phone}','{message}','{services}');
+		$arrayTplVars = array('{bgTop}','{bgMiddle}','{bgBottom}','{tick}','{emailLogo}','{fullName}','{emailAddress}','{address}','{phone}','{message}','{services}','{company}','{fax}');
 		$arrayTplData = array(	self::$bgTop,
 								self::$bgMiddle,
 								self::$bgBottom,
@@ -80,7 +85,9 @@ class ContactUsPage {
 								$this->address,
 								$this->phone,
 								$this->message,
-								$services);
+								$services,
+								$this->company,
+								$this->fax);
 								
 		$message = str_replace($arrayTplVars, $arrayTplData, $message);
 		

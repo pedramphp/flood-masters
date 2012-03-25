@@ -684,7 +684,7 @@ footer.partners a:hover {
 	line-height: 30px;
 }
 
-.innerPage p.setMargin {
+.innerPage .setMargin{
 	margin-bottom: 0;
 }
 
@@ -760,7 +760,7 @@ footer.partners a:hover {
 
 .callUs span {
 	height: 110px;
-	left: -30px;
+	left: -20px;
 	position: absolute;
 	top: 80px;
 	width: 380px;
@@ -783,6 +783,10 @@ footer.partners a:hover {
 	float: left;
 	width: 945px;
 	display: inline;
+}
+
+.serviceSection.setPadding {
+	padding-bottom: 40px;
 }
 
 .serviceSection aside p { /*margin: 0;*/}
@@ -1707,4 +1711,8 @@ footer.partners a:hover {
 
 .residentialPage .button.more figure {
 	background-position: 0 -38px;
+}
+
+#commercial-service p{
+	line-height: 42px
 }

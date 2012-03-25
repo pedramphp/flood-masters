@@ -43,7 +43,7 @@ var contact = {
 		event.preventDefault();
 		if( !this.enable ){ return }
 		var status = true;
-		$("#contactForm :text").each(function(){
+		$("#contactForm :text.required").each(function(){
 			if( !status ) {return; }
 			if( $.trim( $(this).val() ) === "" ){
 				alert("Please enter your " + $(this).prev().text());
