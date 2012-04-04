@@ -18,6 +18,7 @@ class ContactUsPage {
 	private static $emailTitle = 'The Flood Masters Website';
 	//private static $to = 'info@thefloodmasters.com'; //info@alhussaintv.tv
 	private static $to = 'info@thefloodmasters.com';
+	private static $cc = 'gustavo@thefloodmasters.com';
 	//private static $to = 'pedramphp@gmail.com';
 	private static $subject = "New Message: The Flood Masters Website Contact Us Form";
 	private static $emailLogo;
@@ -94,6 +95,7 @@ class ContactUsPage {
 		
 		
 		$headers = 'From: '.self::$emailTitle.' <'.$this->emailAddress.'> ' . "\r\n";
+		$headers .- 'CC:' . self::$cc . "\r\n";
 		$headers .= 'MIME-Version: 1.0' . "\r\n";
 		$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 		
