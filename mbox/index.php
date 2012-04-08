@@ -315,7 +315,6 @@ class  LiteFrame {
         
       
        $path = $this->fileSystemPath.$this->actionFolder.self::$yAction['_LITE_']['ACTION'].".php";
-        
        if(!file_exists ( $path )){ 
        	  header( 'Location: ' . $this->applicationPath.'?action=404' );
        	  //die ("File <b>".$path." </b> <br />Not Found or File doesn't have the permission to open");      
