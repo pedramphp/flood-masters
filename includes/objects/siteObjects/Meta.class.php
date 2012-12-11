@@ -1,75 +1,67 @@
 <?php 
 
 	class Meta extends SiteObject {
-		
+
 		public function __construct(){
 			parent::__construct();
 		}
-		
-		
+
+
 		public function process(){
-			
+
 			switch(LiteFrame::getActiveAction()){	
-			
+
 				case "homepage" :
-					$keyword = "Fire, Water, Mold Emergency Restoration. Carpet and Upholstery Cleaning";
-					$description = "24 Hour emergency water, flood, fire and mold clean up and restoration services. Carpet and upholstery cleaning, repair and installation";
-					break;
-				case "residential-services":
-					$keyword = "fire damage restoration, water and mold damage restoration, carpet and upholstery cleaning, carpet and hardwood installation, sump pump and basement waterproofing";
-					$description = "water, fire, mold damage clean up, carpet, upholstery cleaning and installation. Basement waterproofing and sump pump installation";
+					$keyword = "flood damage cleanup, mold removal washington dc, mold removal Virginia, flood damage cleanup Virginia, flood damage cleanup Washington dc, flood damage restoration";
+					$description = "The flood masters is fire, mold, flood damage cleanup & removal company, offering services in Virginia, Washington DC, Maryland. We offers flood damage cleanup & mold removal of commercial & residential properties.";
 					break;
 				case "commercial-services":
-					$keyword = "fire damage restoration, water and mold damage restoration, carpet and upholstery cleaning, carpet and hardwood installation, sump pump and basement waterproofing";
-					$description = "water, fire, mold damage clean up, carpet, upholstery cleaning and installation. Basement waterproofing and sump pump installation";					
+					$keyword = "commercial cleaning services, commercial flood restoration, commercial water damage recovery, commercial fire restoration, commercial smoke and soot restoration, commercial services Virginia, commercial mold remediation, commercial flooring services, commercial sewage damage restoration, commercial pipe burst restoration, commercial flooring services, commercial basement waterproofing";
+					$description = "The Flood Masters provides 24 hour emergency commercial water, fire, mold damage clean up, carpet, upholstery cleaning and installation, basement waterproofing and sump pump installation services.";					
 					break;
 				case "residential-services":
-					$keyword = "Fire, Water, Mold Emergency Restoration. Carpet and Upholstery Cleaning";
-					$description = "24 Hour emergency water, flood, fire and mold clean up and restoration services. Carpet and upholstery cleaning, repair and installation";
+					$keyword = "residential cleaning services, residential flood restoration, residential water damage recovery, residential fire restoration, residential smoke and soot restoration, residential services Virginia, residential mold remediation, residential flooring services, residential sewage damage restoration, residential pipe burst restoration, residential flooring services, residential basement waterproofing";
+					$description = "The Flood Masters provides 24 hour emergency residential water, flood, fire, mold clean up and restoration and carpet and upholstery cleaning, repair and installation services.";
 					break;
 				case "about":
-					$keyword = "Property restoration, fire damage restoration, water damage restoration, mold mitigation services, carpet cleaning, upholstery cleaning";
+					$keyword = "Property restoration service, fire damage restoration, water damage restoration, mold mitigation services, carpet cleaning service, upholstery cleaning service, Tile and Laminate Floor Installation, carpet and hardwood installation, Asbestos Abatement Services";
 					$description = "Property Damage Restoration Company specializing in clean up and restoration of Commercial and Residential properties from fire, water, mold";
 					break;
 				case "contact":
-					$keyword = "703-499-0011, 1-855-356-6391, info@thefloodmasters.com, www.thefloodmasters.com, facebook.com/thefloodmasters, property damage restoration";
+					$keyword = "damage restoration service virginia, damage restoration services virginia, restoration services virginia, floodmasters virginia, flood damage recovery virginia, flood damage restoration virginia, mold emergency restoration virginia, carpet and Mold Emergency Restoration virginia, Carpet and Upholstery Cleaning virginia, fire damage restoration virginia, disaster recovery services virginia, disaster recovery services Virginia";
 					$description = "call or email the flood masters professionals, emergency property damage restoration clean up services, carpet and upholstery cleaning";
 					break;
-				case "fire":
-					$keyword = "Furnace puff back, fire damage, smoke damage, soot damage, fire damage clean up, kitchen fire repair, odor removal";
-					$description = "Fire, smoke and soot clean up and restoration for commercial and residential propertiesd";
-					break;
 				case "water":
-					$keyword = "water damage, flood damage, storm damage, basement flood, toilet over flow, sewage back up, contents management, document drying, water extraction";
-					$description = "water, flood and storm damage restoration and clean up for commercial and residential, dehumidification, drying and odor removal";
+					$keyword = "water damage restoration service, water damage restoration, water damage cleanup, water damage repair, water damage restoration virginia, water damage restoration washington dc, water damage restoration maryland";
+					$description = "Get water damage restoration service from The flood masters at competitive rates in Virginia, Washington DC, Maryland. We provide 24x7 water damage restoration service, call us at 1-855-356-6391.";
 					break;
 				case "fire":
-					$keyword = "Fire, Water, Mold Emergency Restoration. Carpet and Upholstery Cleaning";
-					$description = "24 Hour emergency water, flood, fire and mold clean up and restoration services. Carpet and upholstery cleaning, repair and installation";
+					$keyword = "fire damage cleanup, fire damage cleanup virginia, fire damage cleanup washington dc, fire damage cleanup maryland, fire damage cleanup & restoration, fire damage restoration services, fire damage restoration";
+					$description = "Fire Damage Cleanup - We are providing superior fire damage cleanup services in Virginia, Washington DC, Maryland. We offer 24hr emergency fire damage cleanup & restoration service.";
 					break;
 				case "mold":
-					$keyword = "Mold clean up, mold mitigation, mold removal, odor removal, mold restoration, wet basement clean up";
-					$description = "Mold mitigation, clean up and restoration. Odor and bacteria removal. Property decontamination and clean up";
+					$keyword = "mold remediation virginia, mold remediation, mold remediation washington dc, mold remediation maryland, mold damage restoration services, mold mitigation services";
+					$description = "Need help for mold remediation in Virginia? We specialize in mold remediation service in Virginia, Washington DC, Maryland. Get effective mold remediation service at affordable rates.";
 					break;
 				case "cleaning":
-					$keyword = "Carpet cleaning, upholstery cleaning, Oriental and Persian rug cleaning, Tile and grout cleaning, sewage clean up, power washing, hard floor cleaning";
-					$description = "Carpet and upholstery cleaning, oriental and Persian rug cleaning, tile and grout cleaning, sewage clean up and power washing";
+					$keyword = "carpet cleaning virginia, carpet cleaning washington dc, carpet cleaning maryland, rug cleaning virginia, rug cleaning washington dc, rug cleaning maryland, residential carpet cleaning virginia";
+					$description = "Carpet Cleaning Virginia - We provides residential & commercial carpet cleaning services using power of hot water extraction to keep your carpet looking fresh and new. Contact us!";
 					break;
 				case "floor":
-					$keyword = "Berber carpet, plush carpet, carpet installation, hardwood floor installation, tile installation, carpet repair";
-					$description = "Carpet, hardwood, tile installation and repair, berber and plus carpet, next day installation, carpet repair and re-stretching";
+					$keyword = "flooring installation service, indoor and out carpet install, wool carpet install, textures carpet install, Berbers carpet install, wood lamination service, domestic hardwood installation, exotic hardwood installation, bamboo wood installation, cork flooring, ceramic flooring, carpet installation";
+					$description = "We provide expert floor installation service for residential, commercial and industrial spaces in Virginia, Washington DC, Maryland.";
 					break;
 				case "basement":
-					$keyword = "Basement waterproofing, interior water damage repair, French drain installation, sump pump installation, sump pump repair, battery back up system";
-					$description = "Basement waterproofing, sump pump installation, interior and exterior drain repair and installation, French drain installation";
+					$keyword = "basement waterproofing virginia, basement waterproofing washington dc, basement waterproofing maryland, basement waterproofing, basement waterproofing solution, basement waterproofing solution va";
+					$description = "The flood masters is a reliable basement waterproofing solution provider in Virginia, Washington DC & Maryland.  We provide basement waterproofing for residential & commercial spaces.";
 					break;
-						
+
 			}
 			$this->results["keyword"] = $keyword;
 			$this->results["description"] = $description;
-			
+
 		}
-		
+
 	}
 
 

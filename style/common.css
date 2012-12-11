@@ -27,8 +27,6 @@ body {
 	font-weight: normal;
 	line-height: 1.8em;
 	color: #333;
-	overflow-x: hidden;
-	overflow-y: hidden
 }
 
 a, a:link { color: #0088cc; }
@@ -1421,7 +1419,12 @@ footer.partners a:hover {
 	background: transparent url("http://mexo.co/mexo_copyright_logo.png") no-repeat 0 0;
 	width: 86px;
 	margin-top: 10px;
-	
+}
+
+#footer nav a.curlybit{
+	background: transparent url("images/logo-curlybit.png") no-repeat 0 0;
+	width: 96px;
+	margin-top: 10px;
 }
 
 #footer aside{

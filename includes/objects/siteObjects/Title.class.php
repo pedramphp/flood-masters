@@ -1,62 +1,56 @@
 <?php 
 
 	class Title extends SiteObject {
-		
+
 		public function __construct(){
 			parent::__construct();
 		}
-		
-		
+
+
 		public function process(){
-			
+
 			$title = "The Flood Masters, Masters of Disaster";
 			switch(LiteFrame::getActiveAction()){	
-			
+
 				case "homepage" :
-					$title = "The Flood Masters, Masters of Disaster";
+					$title = "Flood Damage Cleanup | Mold Removal Virginia, Washington DC";
 					break;
 				case "residential-services":
-					$title = "water, fire, mold, cleaning, flooring and waterproofing";
+					$title = "Residential Property Clean Up and Restoration | The Flood Masters";
 					break;
 				case "commercial-services":
-					$title = "water, fire, mold, cleaning, flooring and waterproofing";
-					break;
-				case "residential-services":
-					$title = "The Flood Masters, Masters of Disaster";
+					$title = "Commercial Property Clean Up and Restoration | The Flood Masters";
 					break;
 				case "about":
-					$title = "About The Flood Masters and our services";
+					$title = "About Us | The Flood Masters";
 					break;
 				case "contact":
-					$title = "Call today 703-499-0011, 1-855-356-6391";
-					break;
-				case "fire":
-					$title = "Fire, smoke and soot clean up and restoration";
+					$title = "Contact Us | The Flood Masters";
 					break;
 				case "water":
-					$title = "Water, flood and storm damage clean up and restoration";
+					$title = "Water Damage Restoration Service | Water Damage Restoration Service Virginia, Washington DC, Maryland";
 					break;
 				case "fire":
-					$title = "Fire, smoke and soot clean up and restoration";
+					$title = "Fire Damage Cleanup | Fire Damage Restoration Virginia, Washington DC, Maryland";
 					break;
 				case "mold":
-					$title = "Mold mitigation, clean up and restoration services";
+					$title = "Mold Remediation Virginia | Mold Mitigation Virginia, Washington DC, Maryland";
 					break;
 				case "cleaning":
-					$title = "Commercial and residential cleaning services";
+					$title = "Carpet Cleaning Virginia | Rug Cleaning Virginia, Washington DC, Maryland";
 					break;
 				case "floor":
-					$title = "Carpet, hardwood and tile installation and repair";
+					$title = "Flooring Installation Services - Carpet, Hardwood, Tile | The Flood Masters";
 					break;
 				case "basement":
-					$title = "Commercial and residential waterproofing";
+					$title = "Basement Waterproofing Virginia | Basement Waterproofing Washington DC, Maryland";
 					break;
-						
+
 			}
 			$this->results = $title;
-			
+
 		}
-		
+
 	}
 
 
